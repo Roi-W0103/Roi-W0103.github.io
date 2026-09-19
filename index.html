@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>王效禹 — 人机交互 · 触觉设计 · 用户研究</title>
-<meta name="description" content="王效禹的个人主页：伯明翰大学人机交互硕士在读，专注触觉反馈与情绪调节的量化研究、智能硬件原型与产品设计。">
+<title data-i18n="home.meta.title">王效禹 — 人机交互 · 触觉设计 · 用户研究</title>
+<meta name="description" data-i18n-attr="content:home.meta.description" content="王效禹的个人主页：伯明翰大学人机交互硕士在读，专注触觉反馈与情绪调节的量化研究、智能硬件原型与产品设计。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
@@ -15,42 +15,48 @@
 
 <nav class="site-nav">
   <div class="wrap">
-    <a href="#top" class="nav-name">王效禹</a>
+    <a href="#top" class="nav-name" data-i18n="common.name">王效禹</a>
     <div class="nav-links">
-      <a href="#about"><span class="num">01</span>关于</a>
-      <a href="#focus"><span class="num">02</span>研究方向</a>
-      <a href="#spotlight"><span class="num">03</span>代表性研究</a>
-      <a href="#projects"><span class="num">04</span>精选项目</a>
-      <a href="#experience"><span class="num">05</span>经历</a>
-      <a href="#contact"><span class="num">06</span>联系</a>
+      <a href="#about"><span class="num">01</span><span data-i18n="nav.about">关于</span></a>
+      <a href="#focus"><span class="num">02</span><span data-i18n="nav.focus">研究方向</span></a>
+      <a href="#spotlight"><span class="num">03</span><span data-i18n="nav.spotlight">代表性研究</span></a>
+      <a href="#projects"><span class="num">04</span><span data-i18n="nav.projects">精选项目</span></a>
+      <a href="#experience"><span class="num">05</span><span data-i18n="nav.experience">经历</span></a>
+      <a href="#contact"><span class="num">06</span><span data-i18n="nav.contact">联系</span></a>
     </div>
-    <a class="nav-cta" href="assets/resume.pdf">下载简历</a>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="zh" class="is-active">中</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+      <a class="nav-cta" href="assets/resume.pdf" data-i18n="common.downloadResume">下载简历</a>
+    </div>
   </div>
 </nav>
 
 <header id="top" class="hero">
   <div class="wrap">
-    <span class="eyebrow">人机交互 · 触觉设计 · 用户研究</span>
-    <h1>王效禹</h1>
-    <p class="tagline">伯明翰大学人机交互硕士在读，专注 <em>触觉反馈</em> 与 <em>情绪调节</em> 场景下的量化研究、智能硬件原型与产品设计。</p>
+    <span class="eyebrow" data-i18n="home.hero.eyebrow">人机交互 · 触觉设计 · 用户研究</span>
+    <h1 data-i18n="common.name">王效禹</h1>
+    <p class="tagline" data-i18n="home.hero.tagline">伯明翰大学人机交互硕士在读，专注 <em>触觉反馈</em> 与 <em>情绪调节</em> 场景下的量化研究、智能硬件原型与产品设计。</p>
 
     <div class="status-bar">
       <span class="dot"></span>
-      <span class="typewriter" data-typewriter="当前：伯明翰大学人机交互硕士在读 · 2026 届毕业生 · 开放实习 / 全职机会"></span>
+      <span class="typewriter" data-i18n-attr="data-typewriter:home.hero.status" data-typewriter="当前：伯明翰大学人机交互硕士在读 · 2026 届毕业生 · 开放实习 / 全职机会"></span>
       <span>·</span>
-      <span>中国天津 现在 <span data-cn-clock>--:--</span></span>
+      <span><span data-i18n="home.hero.locationNow">中国天津 现在</span> <span data-cn-clock>--:--</span></span>
     </div>
 
     <div class="badge-row">
       <span class="badge accent">University of Birmingham · QS 68</span>
-      <span class="badge">2026.12 毕业</span>
-      <span class="badge">雅思 6.5 · 英语工作语言</span>
-      <span class="badge">Axure · Figma · PRD 撰写</span>
+      <span class="badge" data-i18n="home.hero.badgeGrad">2026.12 毕业</span>
+      <span class="badge" data-i18n="home.hero.badgeIelts">雅思 6.5 · 英语工作语言</span>
+      <span class="badge" data-i18n="home.hero.badgeTools">Axure · Figma · PRD 撰写</span>
     </div>
 
     <div class="btn-row">
-      <a class="btn btn-primary" href="#spotlight">查看代表性研究 →</a>
-      <a class="btn btn-secondary" href="assets/resume.pdf">下载简历（PDF）</a>
+      <a class="btn btn-primary" href="#spotlight" data-i18n="home.hero.ctaSpotlight">查看代表性研究 →</a>
+      <a class="btn btn-secondary" href="assets/resume.pdf" data-i18n="home.hero.ctaResume">下载简历（PDF）</a>
     </div>
 
     <p class="contact-line">
@@ -64,27 +70,27 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">01 · About</span>
-      <h2>你好，我是王效禹</h2>
+      <h2 data-i18n="home.about.title">你好，我是王效禹</h2>
     </div>
     <div class="about-grid reveal">
       <!-- 如果之后有头像照片，把下面这个 monogram div 换成
            <div class="avatar"><img src="assets/profile.jpg" alt="王效禹"></div> 即可 -->
-      <div class="avatar"><span>王</span></div>
+      <div class="avatar"><span data-i18n="home.about.avatarInitial">王</span></div>
       <div>
-        <p>我是伯明翰大学人机交互硕士在读学生，硕士阶段专注于<strong>触觉反馈与情绪调节</strong>的量化研究——通过被试内实验设计、生理 / 心理量表测量，验证不同触觉反馈范式对压力与情绪状态的调节效果。硬件是我理解用户体验的方式：从 Arduino 原型到 3D 打印外壳，我习惯亲手把一个研究问题做成可触摸、可测试的东西，再用数据说话。</p>
-        <p>本科阶段就读于江南大学计算机科学与技术专业（人工智能方向），主导过多个从 0 到 1 的产品项目，兼具 C 端体验洞察与 B 端系统设计视角，系统性掌握市场分析、用户研究、产品设计与需求管理的全链路能力。我对 AIGC 领域有浓厚兴趣与深度实践，熟练运用 AI 工具赋能产品工作流；也曾连续多年担任班长，具备扎实的组织协调与跨团队沟通能力，善于高效整合资源，推动项目从概念落地为现实。</p>
+        <p data-i18n="home.about.p1">我是伯明翰大学人机交互硕士在读学生，硕士阶段专注于<strong>触觉反馈与情绪调节</strong>的量化研究——通过被试内实验设计、生理 / 心理量表测量，验证不同触觉反馈范式对压力与情绪状态的调节效果。硬件是我理解用户体验的方式：从 Arduino 原型到 3D 打印外壳，我习惯亲手把一个研究问题做成可触摸、可测试的东西，再用数据说话。</p>
+        <p data-i18n="home.about.p2">本科阶段就读于江南大学计算机科学与技术专业（人工智能方向），主导过多个从 0 到 1 的产品项目，兼具 C 端体验洞察与 B 端系统设计视角，系统性掌握市场分析、用户研究、产品设计与需求管理的全链路能力。我对 AIGC 领域有浓厚兴趣与深度实践，熟练运用 AI 工具赋能产品工作流；也曾连续多年担任班长，具备扎实的组织协调与跨团队沟通能力，善于高效整合资源，推动项目从概念落地为现实。</p>
         <div class="skill-tags">
-          <span>被试内实验设计</span>
-          <span>可用性测试</span>
-          <span>问卷设计与 SPSS 分析</span>
-          <span>用户画像 / 旅程图</span>
+          <span data-i18n="home.about.skill1">被试内实验设计</span>
+          <span data-i18n="home.about.skill2">可用性测试</span>
+          <span data-i18n="home.about.skill3">问卷设计与 SPSS 分析</span>
+          <span data-i18n="home.about.skill4">用户画像 / 旅程图</span>
           <span>Axure</span>
           <span>Figma</span>
-          <span>PRD 撰写</span>
+          <span data-i18n="home.about.skill5">PRD 撰写</span>
           <span>Arduino</span>
-          <span>DRV2605L 触觉驱动</span>
+          <span data-i18n="home.about.skill6">DRV2605L 触觉驱动</span>
           <span>TouchDesigner</span>
-          <span>3D 打印</span>
+          <span data-i18n="home.about.skill7">3D 打印</span>
           <span>C/C++</span>
           <span>Python</span>
         </div>
@@ -98,30 +104,30 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">02 · Research Focus</span>
-      <h2>贯穿我研究的五条线索</h2>
-      <p>我的研究围绕「触觉交互 × 情绪调节」展开，从硬件驱动的触觉渲染，到用户研究方法，再到落地为可用的产品方案。</p>
+      <h2 data-i18n="home.focus.title">贯穿我研究的五条线索</h2>
+      <p data-i18n="home.focus.intro">我的研究围绕「触觉交互 × 情绪调节」展开，从硬件驱动的触觉渲染，到用户研究方法，再到落地为可用的产品方案。</p>
     </div>
     <div class="hub-wrap reveal">
       <div class="hub-list">
         <div class="hub-item">
-          <h3>触觉反馈设计</h3>
-          <p>仿生振动（呼吸 / 心跳节律）、气动软体驱动等触觉渲染策略的设计、实现与对比评估。</p>
+          <h3 data-i18n="home.focus.item1.title">触觉反馈设计</h3>
+          <p data-i18n="home.focus.item1.desc">仿生振动（呼吸 / 心跳节律）、气动软体驱动等触觉渲染策略的设计、实现与对比评估。</p>
         </div>
         <div class="hub-item">
-          <h3>情绪调节人机交互</h3>
-          <p>面向急性压力与焦虑场景，设计并验证低干扰、不占用视觉注意力的情绪自我调节交互。</p>
+          <h3 data-i18n="home.focus.item2.title">情绪调节人机交互</h3>
+          <p data-i18n="home.focus.item2.desc">面向急性压力与焦虑场景，设计并验证低干扰、不占用视觉注意力的情绪自我调节交互。</p>
         </div>
         <div class="hub-item">
-          <h3>用户研究方法</h3>
-          <p>被试内重复测量实验设计、拉丁方顺序控制、STAI-6 / SAM 量表测量、问卷与半结构化访谈。</p>
+          <h3 data-i18n="home.focus.item3.title">用户研究方法</h3>
+          <p data-i18n="home.focus.item3.desc">被试内重复测量实验设计、拉丁方顺序控制、STAI-6 / SAM 量表测量、问卷与半结构化访谈。</p>
         </div>
         <div class="hub-item">
-          <h3>智能硬件原型</h3>
-          <p>基于 Arduino、触觉驱动芯片、传感器与 3D 打印的快速迭代原型开发。</p>
+          <h3 data-i18n="home.focus.item4.title">智能硬件原型</h3>
+          <p data-i18n="home.focus.item4.desc">基于 Arduino、触觉驱动芯片、传感器与 3D 打印的快速迭代原型开发。</p>
         </div>
         <div class="hub-item">
-          <h3>产品设计与需求管理</h3>
-          <p>从用户洞察到高保真原型与 PRD 的全链路方法，兼顾 C 端体验与 B 端系统设计视角。</p>
+          <h3 data-i18n="home.focus.item5.title">产品设计与需求管理</h3>
+          <p data-i18n="home.focus.item5.desc">从用户洞察到高保真原型与 PRD 的全链路方法，兼顾 C 端体验与 B 端系统设计视角。</p>
         </div>
       </div>
       <div class="hub-diagram">
@@ -134,24 +140,24 @@
             <line x1="220" y1="220" x2="91" y2="176"></line>
           </g>
           <circle cx="220" cy="220" r="62" fill="var(--sage-light)" stroke="var(--sage)" stroke-width="1.4"></circle>
-          <text x="220" y="213" text-anchor="middle" font-family="Lora, serif" font-size="14" fill="var(--sage-deep)" font-weight="600">触觉交互 ×</text>
-          <text x="220" y="233" text-anchor="middle" font-family="Lora, serif" font-size="14" fill="var(--sage-deep)" font-weight="600">情绪调节研究</text>
+          <text x="220" y="213" text-anchor="middle" font-family="Lora, serif" font-size="14" fill="var(--sage-deep)" font-weight="600" data-i18n="home.focus.hubCenter1">触觉交互 ×</text>
+          <text x="220" y="233" text-anchor="middle" font-family="Lora, serif" font-size="14" fill="var(--sage-deep)" font-weight="600" data-i18n="home.focus.hubCenter2">情绪调节研究</text>
 
           <g font-family="Inter, sans-serif" font-size="12.5" fill="var(--ink-soft)">
             <circle cx="220" cy="88" r="5" fill="var(--gold)"></circle>
-            <text x="220" y="68" text-anchor="middle">触觉反馈设计</text>
+            <text x="220" y="68" text-anchor="middle" data-i18n="home.focus.item1.title">触觉反馈设计</text>
 
             <circle cx="349" cy="176" r="5" fill="var(--gold)"></circle>
-            <text x="349" y="155" text-anchor="middle">情绪调节交互</text>
+            <text x="349" y="155" text-anchor="middle" data-i18n="home.focus.hubNode2">情绪调节交互</text>
 
             <circle cx="305" cy="330" r="5" fill="var(--gold)"></circle>
-            <text x="305" y="356" text-anchor="middle">用户研究方法</text>
+            <text x="305" y="356" text-anchor="middle" data-i18n="home.focus.item3.title">用户研究方法</text>
 
             <circle cx="135" cy="330" r="5" fill="var(--gold)"></circle>
-            <text x="135" y="356" text-anchor="middle">智能硬件原型</text>
+            <text x="135" y="356" text-anchor="middle" data-i18n="home.focus.item4.title">智能硬件原型</text>
 
             <circle cx="91" cy="176" r="5" fill="var(--gold)"></circle>
-            <text x="91" y="155" text-anchor="middle">产品设计管理</text>
+            <text x="91" y="155" text-anchor="middle" data-i18n="home.focus.hubNode5">产品设计管理</text>
           </g>
         </svg>
       </div>
@@ -164,29 +170,29 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">03 · Featured Research</span>
-      <h2>硕士毕业设计：桌面触觉陪伴机器人</h2>
-      <p>一项完整的「设计 - 实现 - 实验 - 统计」研究，比较四种触觉反馈策略对急性压力恢复的影响。</p>
+      <h2 data-i18n="home.spotlight.title">硕士毕业设计：桌面触觉陪伴机器人</h2>
+      <p data-i18n="home.spotlight.intro">一项完整的「设计 - 实现 - 实验 - 统计」研究，比较四种触觉反馈策略对急性压力恢复的影响。</p>
     </div>
     <div class="spotlight-card reveal">
       <div class="spotlight-tags">
-        <span class="hl">MSc 毕业设计</span>
-        <span>伯明翰大学 · 2025–26</span>
-        <span>指导教师 Hyunyoung Kim</span>
-        <span>硬件 + 实验研究</span>
+        <span class="hl" data-i18n="home.spotlight.tag1">MSc 毕业设计</span>
+        <span data-i18n="home.spotlight.tag2">伯明翰大学 · 2025–26</span>
+        <span data-i18n="home.spotlight.tag3">指导教师 Hyunyoung Kim</span>
+        <span data-i18n="home.spotlight.tag4">硬件 + 实验研究</span>
       </div>
-      <h3>Haptic Companionship：面向桌面场景的仿生振动触觉反馈情绪调节研究</h3>
-      <p class="byline">王效禹 · MSc Human–Computer Interaction, University of Birmingham</p>
-      <p class="desc">知识工作者在desk-based场景下常经历急性认知压力，但现有数字干预大多依赖视觉 / 听觉通道，恰好会占用一个已经紧张的用户最稀缺的注意力资源。这项研究设计并实现了一款通过被动掌心接触传递仿生振动的桌面陪伴机器人，直接刺激 C 触觉传入通路与呼吸 / 心跳节律，在不打断工作、不占用视觉注意力的前提下进行情绪自我调节。原型基于 Arduino UNO、DRV2605L 触觉驱动与线性谐振致动器，封装于经过三轮迭代打样的云朵形 PETG 外壳中，可渲染仿生呼吸（12 BPM）、仿生心跳（72 BPM）、机械振动对照与无振动对照四种条件。通过 4×4 拉丁方设计控制顺序效应，以自适应 Stroop 任务诱发急性压力，使用 STAI-6 焦虑量表与 SAM 情绪效价 / 唤醒量表进行测量。</p>
+      <h3 data-i18n="home.spotlight.cardTitle">Haptic Companionship：面向桌面场景的仿生振动触觉反馈情绪调节研究</h3>
+      <p class="byline" data-i18n="home.spotlight.byline">王效禹 · MSc Human–Computer Interaction, University of Birmingham</p>
+      <p class="desc" data-i18n="home.spotlight.desc">知识工作者在desk-based场景下常经历急性认知压力，但现有数字干预大多依赖视觉 / 听觉通道，恰好会占用一个已经紧张的用户最稀缺的注意力资源。这项研究设计并实现了一款通过被动掌心接触传递仿生振动的桌面陪伴机器人，直接刺激 C 触觉传入通路与呼吸 / 心跳节律，在不打断工作、不占用视觉注意力的前提下进行情绪自我调节。原型基于 Arduino UNO、DRV2605L 触觉驱动与线性谐振致动器，封装于经过三轮迭代打样的云朵形 PETG 外壳中，可渲染仿生呼吸（12 BPM）、仿生心跳（72 BPM）、机械振动对照与无振动对照四种条件。通过 4×4 拉丁方设计控制顺序效应，以自适应 Stroop 任务诱发急性压力，使用 STAI-6 焦虑量表与 SAM 情绪效价 / 唤醒量表进行测量。</p>
 
       <div class="spotlight-stats">
-        <div><span class="stat-num">9</span><span class="stat-label">正式被试 · 36 组条件观测</span></div>
-        <div><span class="stat-num">4×4</span><span class="stat-label">拉丁方顺序控制设计</span></div>
-        <div><span class="stat-num">88.9%</span><span class="stat-label">仿生呼吸条件的终选偏好率</span></div>
-        <div><span class="stat-num">31.1%</span><span class="stat-label">焦虑评分平均降幅（同系列研究）</span></div>
+        <div><span class="stat-num">9</span><span class="stat-label" data-i18n="home.spotlight.stat1">正式被试 · 36 组条件观测</span></div>
+        <div><span class="stat-num">4×4</span><span class="stat-label" data-i18n="home.spotlight.stat2">拉丁方顺序控制设计</span></div>
+        <div><span class="stat-num">88.9%</span><span class="stat-label" data-i18n="home.spotlight.stat3">仿生呼吸条件的终选偏好率</span></div>
+        <div><span class="stat-num">31.1%</span><span class="stat-label" data-i18n="home.spotlight.stat4">焦虑评分平均降幅（同系列研究）</span></div>
       </div>
 
       <div class="spotlight-actions">
-        <a class="btn-dark" href="projects/haptic-companionship.html">查看完整案例研究 →</a>
+        <a class="btn-dark" href="projects/haptic-companionship.html" data-i18n="home.spotlight.ctaCase">查看完整案例研究 →</a>
         <span class="btn-ghost-dark">MSc Dissertation · University of Birmingham · 2025–26</span>
       </div>
     </div>
@@ -198,30 +204,30 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">04 · Selected Projects</span>
-      <h2>更多研究与产品项目</h2>
-      <p>涵盖情绪调节交互研究、IoT 产品设计挑战与创业计划书，方法上贯穿问卷、访谈、原型与统计分析。</p>
+      <h2 data-i18n="home.projects.title">更多研究与产品项目</h2>
+      <p data-i18n="home.projects.intro">涵盖情绪调节交互研究、IoT 产品设计挑战与创业计划书，方法上贯穿问卷、访谈、原型与统计分析。</p>
     </div>
     <div class="project-grid">
       <a class="project-card reveal" href="projects/emotion-regulation.html">
-        <span class="kicker">硬件传感器 &amp; 用户研究负责人</span>
-        <h3>可视化情绪调节气动软体交互装置</h3>
-        <p>设计手持式自感应气动软体交互装置，挤压动作实时驱动可视化呼吸引导反馈。49 份需求问卷 + 10 人前后对比评估实验，焦虑评分均值下降 31.1%。</p>
-        <div class="tags"><span>Arduino</span><span>石墨烯传感层</span><span>TouchDesigner</span><span>用户评估</span></div>
-        <span class="go">查看案例研究 →</span>
+        <span class="kicker" data-i18n="home.projects.card1.kicker">硬件传感器 &amp; 用户研究负责人</span>
+        <h3 data-i18n="home.projects.card1.title">可视化情绪调节气动软体交互装置</h3>
+        <p data-i18n="home.projects.card1.desc">设计手持式自感应气动软体交互装置，挤压动作实时驱动可视化呼吸引导反馈。49 份需求问卷 + 10 人前后对比评估实验，焦虑评分均值下降 31.1%。</p>
+        <div class="tags"><span>Arduino</span><span data-i18n="home.projects.card1.tag2">石墨烯传感层</span><span>TouchDesigner</span><span data-i18n="home.projects.card1.tag4">用户评估</span></div>
+        <span class="go" data-i18n="home.projects.cta">查看案例研究 →</span>
       </a>
       <a class="project-card reveal" href="projects/lumaflex.html">
-        <span class="kicker">产品负责人</span>
-        <h3>LumaFlex · 运动后智能拉伸系统</h3>
-        <p>基于双钻模型的全生命周期设计挑战，通过 87 份问卷 + 5 场深度访谈，设计无屏可穿戴 + App 的自动拉伸引导系统。</p>
-        <div class="tags"><span>Double Diamond</span><span>Figma 高保真原型</span><span>用户画像</span><span>IoT</span></div>
-        <span class="go">查看案例研究 →</span>
+        <span class="kicker" data-i18n="home.projects.card2.kicker">产品负责人</span>
+        <h3>LumaFlex · <span data-i18n="home.projects.card2.titleSuffix">运动后智能拉伸系统</span></h3>
+        <p data-i18n="home.projects.card2.desc">基于双钻模型的全生命周期设计挑战，通过 87 份问卷 + 5 场深度访谈，设计无屏可穿戴 + App 的自动拉伸引导系统。</p>
+        <div class="tags"><span>Double Diamond</span><span data-i18n="home.projects.card2.tag2">Figma 高保真原型</span><span data-i18n="home.projects.card2.tag3">用户画像</span><span>IoT</span></div>
+        <span class="go" data-i18n="home.projects.cta">查看案例研究 →</span>
       </a>
       <a class="project-card reveal" href="projects/green-logistics.html">
-        <span class="kicker">产品负责人</span>
-        <h3>绿色物流服务平台</h3>
-        <p>针对校园快递包装回收率低的问题，设计小程序 + 线下站点双平台方案。315 份问卷 + SPSS 分析，回收效率提升 25%，获省级重点创新项目认证。</p>
-        <div class="tags"><span>用户旅程图</span><span>SPSS</span><span>A/B 测试</span><span>商业计划书</span></div>
-        <span class="go">查看案例研究 →</span>
+        <span class="kicker" data-i18n="home.projects.card2.kicker">产品负责人</span>
+        <h3 data-i18n="home.projects.card3.title">绿色物流服务平台</h3>
+        <p data-i18n="home.projects.card3.desc">针对校园快递包装回收率低的问题，设计小程序 + 线下站点双平台方案。315 份问卷 + SPSS 分析，回收效率提升 25%，获省级重点创新项目认证。</p>
+        <div class="tags"><span data-i18n="home.projects.card3.tag1">用户旅程图</span><span>SPSS</span><span data-i18n="home.projects.card3.tag3">A/B 测试</span><span data-i18n="home.projects.card3.tag4">商业计划书</span></div>
+        <span class="go" data-i18n="home.projects.cta">查看案例研究 →</span>
       </a>
     </div>
   </div>
@@ -232,69 +238,69 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">05 · Experience</span>
-      <h2>教育、实习与校园经历</h2>
+      <h2 data-i18n="home.experience.title">教育、实习与校园经历</h2>
     </div>
 
     <div class="timeline-group reveal">
-      <h3>教育经历</h3>
+      <h3 data-i18n="home.experience.eduHeading">教育经历</h3>
       <div class="tl-item">
         <div class="tl-date">2025.09 – 2026.12</div>
         <div>
-          <div class="tl-role">人机交互 硕士</div>
-          <div class="tl-org">伯明翰大学 University of Birmingham（QS 68）· 计算机学院</div>
-          <ul><li>研究方向：人机交互 · 用户研究 · 智能产品设计</li></ul>
+          <div class="tl-role" data-i18n="home.experience.edu1.role">人机交互 硕士</div>
+          <div class="tl-org" data-i18n="home.experience.edu1.org">伯明翰大学 University of Birmingham（QS 68）· 计算机学院</div>
+          <ul><li data-i18n="home.experience.edu1.bullet1">研究方向：人机交互 · 用户研究 · 智能产品设计</li></ul>
         </div>
       </div>
       <div class="tl-item">
         <div class="tl-date">2019.09 – 2024.06</div>
         <div>
-          <div class="tl-role">计算机科学与技术 本科</div>
-          <div class="tl-org">江南大学（211）· 人工智能与计算机学院</div>
-          <ul><li>专业方向：人工智能 · 数据结构 · 算法设计</li></ul>
+          <div class="tl-role" data-i18n="home.experience.edu2.role">计算机科学与技术 本科</div>
+          <div class="tl-org" data-i18n="home.experience.edu2.org">江南大学（211）· 人工智能与计算机学院</div>
+          <ul><li data-i18n="home.experience.edu2.bullet1">专业方向：人工智能 · 数据结构 · 算法设计</li></ul>
         </div>
       </div>
     </div>
 
     <div class="timeline-group reveal">
-      <h3>实习经历</h3>
+      <h3 data-i18n="home.experience.internHeading">实习经历</h3>
       <div class="tl-item">
         <div class="tl-date">2025.05 – 2025.08</div>
         <div>
-          <div class="tl-role">产品助理 · 数字化中心</div>
-          <div class="tl-org">中海油能源发展股份有限公司</div>
+          <div class="tl-role" data-i18n="home.experience.intern1.role">产品助理 · 数字化中心</div>
+          <div class="tl-org" data-i18n="home.experience.intern1.org">中海油能源发展股份有限公司</div>
           <ul>
-            <li>深入公司在人力资源、项目管理、财务审批等领域的核心数字化项目，通过访谈、跟岗系统性梳理端到端业务流程；社保征缴项目中访谈约 10 位一线业务人员，为产品设计提供关键用户视角。</li>
-            <li>以「干部管理系统」为重点实践项目，独立负责 8 大核心模块的产品方案设计，独立输出 Axure 高保真原型及 PRD 文档。</li>
-            <li>主导「证卡管理系统」在 PC 端与移动端的全流程可用性测试，基于业务场景设计并执行超 30 项测试用例，累计定位并推动修复 15+ 处流程中断点与体验优化项。</li>
+            <li data-i18n="home.experience.intern1.bullet1">深入公司在人力资源、项目管理、财务审批等领域的核心数字化项目，通过访谈、跟岗系统性梳理端到端业务流程；社保征缴项目中访谈约 10 位一线业务人员，为产品设计提供关键用户视角。</li>
+            <li data-i18n="home.experience.intern1.bullet2">以「干部管理系统」为重点实践项目，独立负责 8 大核心模块的产品方案设计，独立输出 Axure 高保真原型及 PRD 文档。</li>
+            <li data-i18n="home.experience.intern1.bullet3">主导「证卡管理系统」在 PC 端与移动端的全流程可用性测试，基于业务场景设计并执行超 30 项测试用例，累计定位并推动修复 15+ 处流程中断点与体验优化项。</li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="timeline-group reveal">
-      <h3>校园经历</h3>
+      <h3 data-i18n="home.experience.campusHeading">校园经历</h3>
       <div class="tl-item">
         <div class="tl-date">2020.09 – 2024.06</div>
         <div>
-          <div class="tl-role">班长</div>
-          <div class="tl-org">计科 5 班</div>
-          <ul><li>积极投身班级建设与学院工作，综合素质排名优异；带领班级获得 2020 年度「雷锋」特称团支部称号。</li></ul>
+          <div class="tl-role" data-i18n="home.experience.campus1.role">班长</div>
+          <div class="tl-org" data-i18n="home.experience.campus1.org">计科 5 班</div>
+          <ul><li data-i18n="home.experience.campus1.bullet1">积极投身班级建设与学院工作，综合素质排名优异；带领班级获得 2020 年度「雷锋」特称团支部称号。</li></ul>
         </div>
       </div>
       <div class="tl-item">
         <div class="tl-date">2020.09 – 2021.06</div>
         <div>
-          <div class="tl-role">会长</div>
-          <div class="tl-org">魔方协会</div>
-          <ul><li>带领社团成员参加 WCA 世界魔方协会举办的比赛并担任策划一职；安排每周例会及训练，活跃于校内社团招新活动。</li></ul>
+          <div class="tl-role" data-i18n="home.experience.campus2.role">会长</div>
+          <div class="tl-org" data-i18n="home.experience.campus2.org">魔方协会</div>
+          <ul><li data-i18n="home.experience.campus2.bullet1">带领社团成员参加 WCA 世界魔方协会举办的比赛并担任策划一职；安排每周例会及训练，活跃于校内社团招新活动。</li></ul>
         </div>
       </div>
       <div class="tl-item">
         <div class="tl-date">2021 / 2023</div>
         <div>
-          <div class="tl-role">志愿者</div>
-          <div class="tl-org">无锡马拉松</div>
-          <ul><li>连续担任赛事志愿者，2023 年获评「优秀志愿者」称号。</li></ul>
+          <div class="tl-role" data-i18n="home.experience.campus3.role">志愿者</div>
+          <div class="tl-org" data-i18n="home.experience.campus3.org">无锡马拉松</div>
+          <ul><li data-i18n="home.experience.campus3.bullet1">连续担任赛事志愿者，2023 年获评「优秀志愿者」称号。</li></ul>
         </div>
       </div>
     </div>
@@ -306,16 +312,16 @@
   <div class="wrap">
     <div class="reveal">
       <span class="eyebrow section-head-inline" style="display:block;font-size:.78rem;color:var(--gold);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:14px;">06 · Get in Touch</span>
-      <h2>期待和你聊聊人机交互、触觉设计，或一次实习 / 全职机会。</h2>
+      <h2 data-i18n="home.contact.title">期待和你聊聊人机交互、触觉设计，或一次实习 / 全职机会。</h2>
       <div class="contact-grid">
         <div class="btn-row" style="margin-bottom:0;">
-          <a class="btn btn-primary" href="mailto:13102234349@163.com">发邮件给我 →</a>
-          <a class="btn btn-secondary" href="assets/resume.pdf">下载简历</a>
+          <a class="btn btn-primary" href="mailto:13102234349@163.com" data-i18n="home.contact.ctaEmail">发邮件给我 →</a>
+          <a class="btn btn-secondary" href="assets/resume.pdf" data-i18n="common.downloadResume">下载简历</a>
         </div>
         <div class="contact-details">
-          邮箱：<a href="mailto:13102234349@163.com">13102234349@163.com</a><br>
-          常驻地：中国 · 天津<br>
-          <span style="font-size:.82rem;">（更多联系方式见简历）</span>
+          <span data-i18n="home.contact.emailLabel">邮箱：</span><a href="mailto:13102234349@163.com">13102234349@163.com</a><br>
+          <span data-i18n="home.contact.location">常驻地：中国 · 天津</span><br>
+          <span style="font-size:.82rem;" data-i18n="home.contact.moreInfo">（更多联系方式见简历）</span>
         </div>
       </div>
     </div>
@@ -324,11 +330,12 @@
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%;">
-    <span>© 2026 王效禹</span>
+    <span data-i18n="home.footer.copyright">© 2026 王效禹</span>
     <span>Built with care</span>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

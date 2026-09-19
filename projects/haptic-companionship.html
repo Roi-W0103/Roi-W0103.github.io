@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haptic Companionship：桌面触觉陪伴机器人 — 王效禹</title>
-<meta name="description" content="MSc 毕业设计：一款仿生振动触觉反馈桌面陪伴机器人，比较四种触觉条件对急性压力恢复的影响。">
+<title data-i18n="haptic.meta.title">Haptic Companionship：桌面触觉陪伴机器人 — 王效禹</title>
+<meta name="description" data-i18n-attr="content:haptic.meta.description" content="MSc 毕业设计：一款仿生振动触觉反馈桌面陪伴机器人，比较四种触觉条件对急性压力恢复的影响。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
@@ -15,26 +15,32 @@
 
 <nav class="site-nav">
   <div class="wrap">
-    <a href="../index.html#projects" class="nav-back">← 返回主页</a>
-    <span class="nav-name" style="font-size:.85rem;color:var(--ink-faint);">王效禹</span>
+    <a href="../index.html#projects" class="nav-back" data-i18n="common.backToHome">← 返回主页</a>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="zh" class="is-active">中</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+      <span class="nav-name" style="font-size:.85rem;color:var(--ink-faint);" data-i18n="common.name">王效禹</span>
+    </div>
   </div>
 </nav>
 
 <header class="project-hero">
   <div class="wrap">
     <div class="tags">
-      <span>MSc 毕业设计</span>
-      <span>伯明翰大学 · 2025–26</span>
-      <span>硬件 + 实验研究</span>
-      <span>个人项目</span>
+      <span data-i18n="home.spotlight.tag1">MSc 毕业设计</span>
+      <span data-i18n="home.spotlight.tag2">伯明翰大学 · 2025–26</span>
+      <span data-i18n="home.spotlight.tag4">硬件 + 实验研究</span>
+      <span data-i18n="haptic.tagSolo">个人项目</span>
     </div>
-    <h1>Haptic Companionship：面向桌面场景的仿生振动触觉反馈情绪调节研究</h1>
-    <p class="subtitle">比较仿生呼吸、仿生心跳、机械振动与无振动对照四种桌面触觉反馈条件，对急性认知压力后焦虑与情绪状态恢复的影响。</p>
+    <h1 data-i18n="home.spotlight.cardTitle">Haptic Companionship：面向桌面场景的仿生振动触觉反馈情绪调节研究</h1>
+    <p class="subtitle" data-i18n="haptic.subtitle">比较仿生呼吸、仿生心跳、机械振动与无振动对照四种桌面触觉反馈条件，对急性认知压力后焦虑与情绪状态恢复的影响。</p>
     <div class="meta-row">
-      <div><span class="meta-label">角色</span><span class="meta-value">独立完成 · 硬件、实验设计与统计分析</span></div>
-      <div><span class="meta-label">指导老师</span><span class="meta-value">Hyunyoung Kim</span></div>
-      <div><span class="meta-label">周期</span><span class="meta-value">2025.05 – 2025.08（迭代打样至 2026）</span></div>
-      <div><span class="meta-label">工具</span><span class="meta-value">Arduino UNO · DRV2605L · 3D 打印 · 非参数统计</span></div>
+      <div><span class="meta-label" data-i18n="common.metaRole">角色</span><span class="meta-value" data-i18n="haptic.metaRoleVal">独立完成 · 硬件、实验设计与统计分析</span></div>
+      <div><span class="meta-label" data-i18n="common.metaSupervisor">指导老师</span><span class="meta-value">Hyunyoung Kim</span></div>
+      <div><span class="meta-label" data-i18n="common.metaTimeline">周期</span><span class="meta-value" data-i18n="haptic.metaTimelineVal">2025.05 – 2025.08（迭代打样至 2026）</span></div>
+      <div><span class="meta-label" data-i18n="common.metaTools">工具</span><span class="meta-value">Arduino UNO · DRV2605L · 3D 打印 · <span data-i18n="haptic.metaToolsVal">非参数统计</span></span></div>
     </div>
   </div>
 </header>
@@ -47,22 +53,22 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>项目背景</h2>
+    <h2 data-i18n="common.headingBackground">项目背景</h2>
     <div class="pj-body">
-      <p>久坐办公 / 学习的知识工作者经常经历急性认知压力与状态焦虑，但现有的数字压力干预大多依赖视觉或听觉通道——恰恰是一个已经紧张、注意力被占用的用户最稀缺的资源。触觉提供了一条可以与中枢注意力并行工作、而非争夺注意力的通道，但传统触觉设备大多采用高频机械警报这类「话务式」信号，容易让人一惊而非平静下来。</p>
-      <p>更重要的是，已有文献大多只是把「某一种仿生节律」与「非仿生对照」相比较，很少在同一项研究中直接比较呼吸节律与心跳节律这两条不同的生理夹带（entrainment）路径——仿生本身是否足够带来平静效果，还是渲染的具体节律才是关键？这正是本项目要回答的问题。</p>
+      <p data-i18n="haptic.bg.p1">久坐办公 / 学习的知识工作者经常经历急性认知压力与状态焦虑，但现有的数字压力干预大多依赖视觉或听觉通道——恰恰是一个已经紧张、注意力被占用的用户最稀缺的资源。触觉提供了一条可以与中枢注意力并行工作、而非争夺注意力的通道，但传统触觉设备大多采用高频机械警报这类「话务式」信号，容易让人一惊而非平静下来。</p>
+      <p data-i18n="haptic.bg.p2">更重要的是，已有文献大多只是把「某一种仿生节律」与「非仿生对照」相比较，很少在同一项研究中直接比较呼吸节律与心跳节律这两条不同的生理夹带（entrainment）路径——仿生本身是否足够带来平静效果，还是渲染的具体节律才是关键？这正是本项目要回答的问题。</p>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>研究问题</h2>
+    <h2 data-i18n="haptic.heading.rq">研究问题</h2>
     <div class="pj-body">
       <ul>
-        <li><strong>RQ1</strong>：仿生振动触觉反馈（呼吸 / 心跳节律）相较于非仿生和无振动条件，如何影响急性认知压力后的状态焦虑与主观恢复？</li>
-        <li><strong>RQ2</strong>：实时渲染的仿生触觉是否比传统非仿生机械振动带来更好的情绪效价与愉悦感？这一优势在呼吸与心跳两种仿生节律之间是否存在差异？</li>
-        <li><strong>RQ3</strong>：有机的鹅卵石 / 云朵形外壳如何支持被动的手部搁置人体工学，并促进用户感知到的自然感与「生命感」？</li>
+        <li data-i18n="haptic.rq1"><strong>RQ1</strong>：仿生振动触觉反馈（呼吸 / 心跳节律）相较于非仿生和无振动条件，如何影响急性认知压力后的状态焦虑与主观恢复？</li>
+        <li data-i18n="haptic.rq2"><strong>RQ2</strong>：实时渲染的仿生触觉是否比传统非仿生机械振动带来更好的情绪效价与愉悦感？这一优势在呼吸与心跳两种仿生节律之间是否存在差异？</li>
+        <li data-i18n="haptic.rq3"><strong>RQ3</strong>：有机的鹅卵石 / 云朵形外壳如何支持被动的手部搁置人体工学，并促进用户感知到的自然感与「生命感」？</li>
       </ul>
     </div>
   </div>
@@ -70,54 +76,54 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>系统设计与实现</h2>
+    <h2 data-i18n="haptic.heading.system">系统设计与实现</h2>
     <div class="pj-body">
-      <p>硬件架构由 Arduino UNO（主控）、Adafruit DRV2605L 触觉驱动芯片、以及一枚线性谐振致动器（LRA）组成。相比传统偏心转子马达，LRA 能实现亚毫秒级响应与解耦的精确振幅控制，是渲染平滑连续波形的前提。四种条件的渲染参数完全来自最终部署的固件：</p>
+      <p data-i18n="haptic.system.p1">硬件架构由 Arduino UNO（主控）、Adafruit DRV2605L 触觉驱动芯片、以及一枚线性谐振致动器（LRA）组成。相比传统偏心转子马达，LRA 能实现亚毫秒级响应与解耦的精确振幅控制，是渲染平滑连续波形的前提。四种条件的渲染参数完全来自最终部署的固件：</p>
 
       <table class="condition-table">
         <thead>
-          <tr><th>条件</th><th>驱动模式</th><th>频率 / 重复</th><th>渲染特征</th></tr>
+          <tr><th data-i18n="haptic.table.h1">条件</th><th data-i18n="haptic.table.h2">驱动模式</th><th data-i18n="haptic.table.h3">频率 / 重复</th><th data-i18n="haptic.table.h4">渲染特征</th></tr>
         </thead>
         <tbody>
-          <tr><td>A · 仿生呼吸</td><td>实时波形流</td><td>12 BPM（≈5.2 s/循环）</td><td>Smoothstep 平滑曲线，强度 30–80，吸气 2s / 呼气 2s</td></tr>
-          <tr><td>B · 仿生心跳</td><td>实时波形流</td><td>72 BPM（≈833 ms/循环）</td><td>S1（收缩期）峰值 80，S2（舒张期）峰值 65，线性步进</td></tr>
-          <tr><td>C · 机械振动对照</td><td>内置库触发</td><td>约 1 Hz 重复</td><td>固定波形、无连续调制，类似传统提醒振动</td></tr>
-          <tr><td>D · 无振动对照</td><td>实时波形流</td><td>N/A</td><td>全程强度恒为 0，仅保留被动接触</td></tr>
+          <tr><td data-i18n="haptic.table.r1c1">A · 仿生呼吸</td><td data-i18n="haptic.table.r1c2">实时波形流</td><td>12 BPM（≈5.2 s/<span data-i18n="haptic.table.cycle">循环</span>）</td><td data-i18n="haptic.table.r1c4">Smoothstep 平滑曲线，强度 30–80，吸气 2s / 呼气 2s</td></tr>
+          <tr><td data-i18n="haptic.table.r2c1">B · 仿生心跳</td><td data-i18n="haptic.table.r1c2">实时波形流</td><td>72 BPM（≈833 ms/<span data-i18n="haptic.table.cycle">循环</span>）</td><td data-i18n="haptic.table.r2c4">S1（收缩期）峰值 80，S2（舒张期）峰值 65，线性步进</td></tr>
+          <tr><td data-i18n="haptic.table.r3c1">C · 机械振动对照</td><td data-i18n="haptic.table.r3c2">内置库触发</td><td data-i18n="haptic.table.r3c3">约 1 Hz 重复</td><td data-i18n="haptic.table.r3c4">固定波形、无连续调制，类似传统提醒振动</td></tr>
+          <tr><td data-i18n="haptic.table.r4c1">D · 无振动对照</td><td data-i18n="haptic.table.r1c2">实时波形流</td><td>N/A</td><td data-i18n="haptic.table.r4c4">全程强度恒为 0，仅保留被动接触</td></tr>
         </tbody>
       </table>
 
-      <h3>外壳的三轮迭代</h3>
-      <p>电子部分确定后，外壳经历了三轮物理迭代：最初用小型扬声器驱动的方案只能听到声音、几乎摸不到振动，因此转向专用触觉驱动方案；随后 3D 打印了 7 版「猫形 / 云朵形」× 4 种材质（TPU 95A / PETG 15% 填充 / PETG 实心 / TPU 85A）的对比原型，综合振动传导效果与人体工学（云朵形状左右对称、无方向性，避免引入利手偏差）选定 PETG 15% 填充的云朵造型；最后把马达从底部槽腔重新设计到贴近手掌接触面的上叶腔体内，显著提升振动传导效率。最终外壳尺寸 110×85×42 mm，半透明 PETG 材质。</p>
+      <h3 data-i18n="haptic.heading.enclosure">外壳的三轮迭代</h3>
+      <p data-i18n="haptic.enclosure.p1">电子部分确定后，外壳经历了三轮物理迭代：最初用小型扬声器驱动的方案只能听到声音、几乎摸不到振动，因此转向专用触觉驱动方案；随后 3D 打印了 7 版「猫形 / 云朵形」× 4 种材质（TPU 95A / PETG 15% 填充 / PETG 实心 / TPU 85A）的对比原型，综合振动传导效果与人体工学（云朵形状左右对称、无方向性，避免引入利手偏差）选定 PETG 15% 填充的云朵造型；最后把马达从底部槽腔重新设计到贴近手掌接触面的上叶腔体内，显著提升振动传导效率。最终外壳尺寸 110×85×42 mm，半透明 PETG 材质。</p>
     </div>
 
     <div class="img-grid-flow reveal">
       <figure class="figure">
         <img src="../assets/img/haptic/hw-01-electronics.jpg" alt="Arduino UNO、DRV2605L 驱动板与 LRA 马达的电子部分组装">
-        <figcaption>01 · 电子部分组装</figcaption>
+        <figcaption data-i18n="haptic.cap1">01 · 电子部分组装</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/haptic/hw-02-speaker-concept.jpg" alt="早期用小型扬声器驱动的被放弃方案">
-        <figcaption>02 · 被放弃的扬声器方案</figcaption>
+        <figcaption data-i18n="haptic.cap2">02 · 被放弃的扬声器方案</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/haptic/hw-03-shape-variants.jpg" alt="七版猫形与云朵形状材质对比原型">
-        <figcaption>03 · 七版形状 / 材质对比</figcaption>
+        <figcaption data-i18n="haptic.cap3">03 · 七版形状 / 材质对比</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/haptic/hw-04-tpu-variant.jpg" alt="绿色 TPU 材质云朵造型原型，用于区分同色变体">
-        <figcaption>04 · TPU 材质变体（染色便于区分）</figcaption>
+        <figcaption data-i18n="haptic.cap4">04 · TPU 材质变体（染色便于区分）</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/haptic/hw-05-cross-section.jpg" alt="外壳底部槽腔截面对比">
-        <figcaption>05 · 底部槽腔截面对比</figcaption>
+        <figcaption data-i18n="haptic.cap5">05 · 底部槽腔截面对比</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/haptic/hw-06-final-open.jpg" alt="打开的最终外壳，展示贴合手掌接触面的上叶马达腔体">
-        <figcaption>06 · 最终上叶腔体设计</figcaption>
+        <figcaption data-i18n="haptic.cap6">06 · 最终上叶腔体设计</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/haptic/hw-07-final-assembled.jpg" alt="最终组装完成的完整系统">
-        <figcaption>07 · 最终组装完成</figcaption>
+        <figcaption data-i18n="haptic.cap7">07 · 最终组装完成</figcaption>
       </figure>
     </div>
   </div>
@@ -125,20 +131,20 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>实验方法</h2>
+    <h2 data-i18n="haptic.heading.method">实验方法</h2>
     <div class="pj-body">
-      <p>采用被试内重复测量设计：每位参与者在单次约 50–60 分钟的实验中依次体验全部四种条件，每种条件前用一段 90 秒的自适应 Stroop 色词任务诱发急性压力（正确率越高、下一次反应时限越短，形成自我校准的持续压力），随后进行 5 分钟触觉暴露与 3 分钟静息洗脱，条件顺序按 4×4 拉丁方进行部分平衡的顺序控制。参与者对条件身份单盲（只知道字母代号 A/B/C/D）。</p>
-      <p>主要结局指标为 STAI-6 状态焦虑量表、简化版 SAM 情绪效价 / 唤醒量表，以及一份 8 题的条件体验问卷；因样本量小（N = 9）且量表数据非正态，全部采用非参数检验：Friedman 检验配合 Kendall's W 效应量，事后两两比较使用精确 Wilcoxon 符号秩检验并以 Holm 法校正多重比较。</p>
+      <p data-i18n="haptic.method.p1">采用被试内重复测量设计：每位参与者在单次约 50–60 分钟的实验中依次体验全部四种条件，每种条件前用一段 90 秒的自适应 Stroop 色词任务诱发急性压力（正确率越高、下一次反应时限越短，形成自我校准的持续压力），随后进行 5 分钟触觉暴露与 3 分钟静息洗脱，条件顺序按 4×4 拉丁方进行部分平衡的顺序控制。参与者对条件身份单盲（只知道字母代号 A/B/C/D）。</p>
+      <p data-i18n="haptic.method.p2">主要结局指标为 STAI-6 状态焦虑量表、简化版 SAM 情绪效价 / 唤醒量表，以及一份 8 题的条件体验问卷；因样本量小（N = 9）且量表数据非正态，全部采用非参数检验：Friedman 检验配合 Kendall's W 效应量，事后两两比较使用精确 Wilcoxon 符号秩检验并以 Holm 法校正多重比较。</p>
     </div>
 
     <div class="img-grid cols-2 reveal">
       <figure class="figure">
         <img src="../assets/img/haptic/stroop-task-ui.jpg" alt="自适应 Stroop 压力诱发任务界面截图，深色主题、颜色词冲突刺激">
-        <figcaption>自适应 Stroop 压力诱发任务界面</figcaption>
+        <figcaption data-i18n="haptic.cap8">自适应 Stroop 压力诱发任务界面</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/haptic/system-architecture.png" alt="系统架构总览：参与者流程、实验者操作的压力与触觉子系统、数据管线">
-        <figcaption>系统架构总览：参与者流程 · 压力 / 触觉子系统 · 数据管线</figcaption>
+        <figcaption data-i18n="haptic.cap9">系统架构总览：参与者流程 · 压力 / 触觉子系统 · 数据管线</figcaption>
       </figure>
     </div>
   </div>
@@ -146,58 +152,59 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>实验结果</h2>
+    <h2 data-i18n="haptic.heading.results">实验结果</h2>
     <div class="pj-body">
-      <p>9 名参与者完成全部四种条件（36 组条件观测）。压力操纵检验确认 90 秒的自适应 Stroop 任务确实显著提升了焦虑与唤醒水平。在三项主要结局指标上，<strong>仿生呼吸（A）在全部维度上都表现最优</strong>：</p>
+      <p data-i18n="haptic.results.p1">9 名参与者完成全部四种条件（36 组条件观测）。压力操纵检验确认 90 秒的自适应 Stroop 任务确实显著提升了焦虑与唤醒水平。在三项主要结局指标上，<strong>仿生呼吸（A）在全部维度上都表现最优</strong>：</p>
     </div>
 
     <figure class="figure reveal" style="max-width:760px;margin:30px auto;">
       <img src="../assets/img/haptic/chart-main-outcomes.png" alt="四条件在 SAM 效价、SAM 唤醒、STAI-6 反向计分焦虑、放松核心指数上的均值与标准差柱状图，附 Friedman 检验结果">
-      <figcaption>四项主要结局指标的条件均值对比（M ± SD），附 Friedman 检验结果</figcaption>
+      <figcaption data-i18n="haptic.cap10">四项主要结局指标的条件均值对比（M ± SD），附 Friedman 检验结果</figcaption>
     </figure>
 
     <figure class="figure reveal" style="max-width:640px;margin:30px auto;">
       <img src="../assets/img/haptic/chart-final-preference.png" alt="最终强制选择偏好率堆叠条形图，仿生呼吸在偏好、放松、自然感、生命感四项上均排名第一">
-      <figcaption>最终强制选择比较：偏好、最放松、最自然、最有生命感（N = 9）</figcaption>
+      <figcaption data-i18n="haptic.cap11">最终强制选择比较：偏好、最放松、最自然、最有生命感（N = 9）</figcaption>
     </figure>
 
     <div class="pj-body">
-      <div class="quote-block">「心跳的节律很清晰，但有时候感觉太短促、甚至有点烦躁。」——一位参与者对仿生心跳条件（B）的反馈，与呼吸条件下更接近「深呼吸」的评价形成对比。</div>
+      <div class="quote-block" data-i18n="haptic.quote">「心跳的节律很清晰，但有时候感觉太短促、甚至有点烦躁。」——一位参与者对仿生心跳条件（B）的反馈，与呼吸条件下更接近「深呼吸」的评价形成对比。</div>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>讨论与关键发现</h2>
+    <h2 data-i18n="haptic.heading.discussion">讨论与关键发现</h2>
     <div class="pj-body">
-      <p>结果部分支持假设 H1：仿生条件整体优于非仿生 / 无振动条件，但两种仿生条件并不等效——仿生呼吸持续优于仿生心跳，说明<strong>「仿生」本身并不足够，被渲染的具体节律才是关键</strong>。这与呼吸节律夹带（respiratory entrainment）机制一致：用户可以主动把自己的呼吸同步到一个较慢的外部节奏上，而心跳节律是被动施加的、无法被用户主动放慢，因此更容易被感知为「清晰但略显急促」而非真正的平静。机械振动条件（C）在放松度、愉悦度与最终偏好上全面垫底，与 C 触觉传入通路理论一致——固定波形的重复触发缺乏平滑调制，更接近具有警觉性的判别式触觉信号，而非能激活 C 触觉传入的抚触式信号。</p>
-      <p>研究的主要局限包括样本量较小（N = 9，所有统计推断为探索性而非验证性）、拉丁方顺序未完全均衡分配、连续生理指标（HRV / EDA）未能可靠采集等，后续工作计划扩大样本至 12–16 人并引入连续生理测量进行验证性重复实验。</p>
+      <p data-i18n="haptic.discussion.p1">结果部分支持假设 H1：仿生条件整体优于非仿生 / 无振动条件，但两种仿生条件并不等效——仿生呼吸持续优于仿生心跳，说明<strong>「仿生」本身并不足够，被渲染的具体节律才是关键</strong>。这与呼吸节律夹带（respiratory entrainment）机制一致：用户可以主动把自己的呼吸同步到一个较慢的外部节奏上，而心跳节律是被动施加的、无法被用户主动放慢，因此更容易被感知为「清晰但略显急促」而非真正的平静。机械振动条件（C）在放松度、愉悦度与最终偏好上全面垫底，与 C 触觉传入通路理论一致——固定波形的重复触发缺乏平滑调制，更接近具有警觉性的判别式触觉信号，而非能激活 C 触觉传入的抚触式信号。</p>
+      <p data-i18n="haptic.discussion.p2">研究的主要局限包括样本量较小（N = 9，所有统计推断为探索性而非验证性）、拉丁方顺序未完全均衡分配、连续生理指标（HRV / EDA）未能可靠采集等，后续工作计划扩大样本至 12–16 人并引入连续生理测量进行验证性重复实验。</p>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>结论</h2>
+    <h2 data-i18n="haptic.heading.conclusion">结论</h2>
     <div class="pj-body">
-      <p>这项研究表明，即使是一个被动搁置在桌面上的小型触觉装置，也能在不占用视觉注意力的前提下，显著改变急性压力后的自我报告焦虑与情绪效价——而<strong>渲染出的具体节律，而非「仿生」这一属性本身，才是决定平静效果的关键变量</strong>。仿生呼吸在全部主要指标上的稳定优势，使其成为未来桌面情绪调节硬件的一个可信默认选项。</p>
+      <p data-i18n="haptic.conclusion.p1">这项研究表明，即使是一个被动搁置在桌面上的小型触觉装置，也能在不占用视觉注意力的前提下，显著改变急性压力后的自我报告焦虑与情绪效价——而<strong>渲染出的具体节律，而非「仿生」这一属性本身，才是决定平静效果的关键变量</strong>。仿生呼吸在全部主要指标上的稳定优势，使其成为未来桌面情绪调节硬件的一个可信默认选项。</p>
     </div>
   </div>
 </section>
 
 <div class="wrap pj-nav">
-  <a href="../index.html#projects">← 返回精选项目</a>
-  <a href="emotion-regulation.html">下一个案例：可视化情绪调节气动软体装置 →</a>
+  <a href="../index.html#projects" data-i18n="haptic.navBack">← 返回精选项目</a>
+  <a href="emotion-regulation.html" data-i18n="haptic.navNext">下一个案例：可视化情绪调节气动软体装置 →</a>
 </div>
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%;">
-    <span>© 2026 王效禹</span>
+    <span data-i18n="home.footer.copyright">© 2026 王效禹</span>
     <span>Built with care</span>
   </div>
 </footer>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

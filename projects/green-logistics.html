@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>绿色物流服务平台 — 王效禹</title>
-<meta name="description" content="小程序 + 线下站点双平台的快递包装循环回收方案，江南大学试点：回收效率提升25%，管理成本降低40%。">
+<title data-i18n="logistics.meta.title">绿色物流服务平台 — 王效禹</title>
+<meta name="description" data-i18n-attr="content:logistics.meta.description" content="小程序 + 线下站点双平台的快递包装循环回收方案，江南大学试点：回收效率提升25%，管理成本降低40%。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
@@ -15,26 +15,32 @@
 
 <nav class="site-nav">
   <div class="wrap">
-    <a href="../index.html#projects" class="nav-back">← 返回主页</a>
-    <span class="nav-name" style="font-size:.85rem;color:var(--ink-faint);">王效禹</span>
+    <a href="../index.html#projects" class="nav-back" data-i18n="common.backToHome">← 返回主页</a>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="zh" class="is-active">中</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+      <span class="nav-name" style="font-size:.85rem;color:var(--ink-faint);" data-i18n="common.name">王效禹</span>
+    </div>
   </div>
 </nav>
 
 <header class="project-hero">
   <div class="wrap">
     <div class="tags">
-      <span>创新创业竞赛项目</span>
-      <span>团队项目</span>
+      <span data-i18n="logistics.tag1">创新创业竞赛项目</span>
+      <span data-i18n="logistics.tag2">团队项目</span>
       <span>2021.10 – 2022.06</span>
-      <span>产品负责人</span>
+      <span data-i18n="home.projects.card2.kicker">产品负责人</span>
     </div>
-    <h1>绿色物流服务平台</h1>
-    <p class="subtitle">微信小程序 + 线下实体回收站点双平台，提升校园快递包装回收率的循环经济方案。</p>
+    <h1 data-i18n="home.projects.card3.title">绿色物流服务平台</h1>
+    <p class="subtitle" data-i18n="logistics.subtitle">微信小程序 + 线下实体回收站点双平台，提升校园快递包装回收率的循环经济方案。</p>
     <div class="meta-row">
-      <div><span class="meta-label">我的角色</span><span class="meta-value">产品负责人 · 需求调研与方案设计</span></div>
-      <div><span class="meta-label">周期</span><span class="meta-value">2021.10 – 2022.06</span></div>
-      <div><span class="meta-label">试点</span><span class="meta-value">江南大学校园</span></div>
-      <div><span class="meta-label">所获荣誉</span><span class="meta-value">省级重点创新项目认证 · 三创挑战赛校级二等奖</span></div>
+      <div><span class="meta-label" data-i18n="pouch.metaRoleLabel">我的角色</span><span class="meta-value" data-i18n="logistics.metaRoleVal">产品负责人 · 需求调研与方案设计</span></div>
+      <div><span class="meta-label" data-i18n="common.metaTimeline">周期</span><span class="meta-value">2021.10 – 2022.06</span></div>
+      <div><span class="meta-label" data-i18n="logistics.metaPilotLabel">试点</span><span class="meta-value" data-i18n="logistics.metaPilotVal">江南大学校园</span></div>
+      <div><span class="meta-label" data-i18n="logistics.metaAwardsLabel">所获荣誉</span><span class="meta-value" data-i18n="logistics.metaAwardsVal">省级重点创新项目认证 · 三创挑战赛校级二等奖</span></div>
     </div>
   </div>
 </header>
@@ -47,28 +53,28 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>项目背景</h2>
+    <h2 data-i18n="common.headingBackground">项目背景</h2>
     <div class="pj-body">
-      <p>中国快递业务量在 2010–2019 年间从 23.4 亿件增长到 833.6 亿件，增长约 40 倍，随之而来的包装废弃物问题却长期缺乏有效治理：邮政快递业每年消耗纸类废弃物超过 900 万吨、塑料废弃物约 180 万吨，且快递包装垃圾在部分特大城市已占生活垃圾增量的 85%–93%。与此同时，国家陆续出台《关于加快推进快递包装绿色转型的意见》等政策，明确到 2025 年可循环快递包装应用规模要达到 1000 万个——这既是一个亟需解决的环保问题，也是一个处于政策红利期、竞争尚不充分的市场机会。</p>
+      <p data-i18n="logistics.bg.p1">中国快递业务量在 2010–2019 年间从 23.4 亿件增长到 833.6 亿件，增长约 40 倍，随之而来的包装废弃物问题却长期缺乏有效治理：邮政快递业每年消耗纸类废弃物超过 900 万吨、塑料废弃物约 180 万吨，且快递包装垃圾在部分特大城市已占生活垃圾增量的 85%–93%。与此同时，国家陆续出台《关于加快推进快递包装绿色转型的意见》等政策，明确到 2025 年可循环快递包装应用规模要达到 1000 万个——这既是一个亟需解决的环保问题，也是一个处于政策红利期、竞争尚不充分的市场机会。</p>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>需求调研</h2>
+    <h2 data-i18n="logistics.heading.research">需求调研</h2>
     <div class="pj-body">
-      <p>团队面向 Z 世代年轻群体发放问卷，回收 315 份、有效率 70%，并结合 SPSS 对用户行为与态度做定量分析，用用户旅程图梳理「收快递 → 拆包装 → 处理包装」全过程中的关键阻碍点。</p>
+      <p data-i18n="logistics.research.p1">团队面向 Z 世代年轻群体发放问卷，回收 315 份、有效率 70%，并结合 SPSS 对用户行为与态度做定量分析，用用户旅程图梳理「收快递 → 拆包装 → 处理包装」全过程中的关键阻碍点。</p>
       <div class="stat-row">
-        <div class="stat-box"><span class="num">315</span><span class="label">回收问卷（有效率 70%）</span></div>
-        <div class="stat-box"><span class="num">19.68%</span><span class="label">此前使用过可循环快递盒</span></div>
-        <div class="stat-box"><span class="num">96.4%</span><span class="label">愿意参与快递包装回收</span></div>
+        <div class="stat-box"><span class="num">315</span><span class="label" data-i18n="logistics.stat1">回收问卷（有效率 70%）</span></div>
+        <div class="stat-box"><span class="num">19.68%</span><span class="label" data-i18n="logistics.stat2">此前使用过可循环快递盒</span></div>
+        <div class="stat-box"><span class="num">96.4%</span><span class="label" data-i18n="logistics.stat3">愿意参与快递包装回收</span></div>
       </div>
-      <p>调研发现用户对可循环快递盒的核心诉求集中在：外观采用绿色 / 棕色等自然色系并使用可降解材料、不需要额外付费参与、IP 化的辨识度设计、参与门槛足够低；在激励机制上，多数用户希望能用积分兑换公益活动或抵扣寄件费用，而非单纯的现金奖励。这些发现直接决定了后续产品的 IP 化定位与积分体系设计。</p>
+      <p data-i18n="logistics.research.p2">调研发现用户对可循环快递盒的核心诉求集中在：外观采用绿色 / 棕色等自然色系并使用可降解材料、不需要额外付费参与、IP 化的辨识度设计、参与门槛足够低；在激励机制上，多数用户希望能用积分兑换公益活动或抵扣寄件费用，而非单纯的现金奖励。这些发现直接决定了后续产品的 IP 化定位与积分体系设计。</p>
 
       <figure class="figure reveal" style="max-width:480px;margin:26px 0;">
         <img src="../assets/img/logistics/chart-willingness.png" alt="用户对IP化可循环快递箱的使用意愿环形图">
-        <figcaption>对 IP 化可循环快递箱的使用意愿分布</figcaption>
+        <figcaption data-i18n="logistics.cap1">对 IP 化可循环快递箱的使用意愿分布</figcaption>
       </figure>
     </div>
   </div>
@@ -76,35 +82,35 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>方案设计</h2>
+    <h2 data-i18n="logistics.heading.solution">方案设计</h2>
     <div class="pj-body">
-      <h3>线上「绿盒子」小程序</h3>
-      <p>集物流信息查询、C2C 商城与社群于一体：用户通过交回快递包装获得「绿豆」积分，可在「绿盒」商城兑换 IP 周边或参与公益活动；考虑到年轻用户的社交习惯，还设计了「漂流盒」树洞社群功能，让用户在等快递、处理包装之外也能获得情感连接。原创 IP「小盒」以 34 个省份 / 自治区 / 直辖市的地域特色为原型设计，让不同规格的包装都能对应一个有辨识度的角色形象。</p>
+      <h3 data-i18n="logistics.heading.app">线上「绿盒子」小程序</h3>
+      <p data-i18n="logistics.solution.p1">集物流信息查询、C2C 商城与社群于一体：用户通过交回快递包装获得「绿豆」积分，可在「绿盒」商城兑换 IP 周边或参与公益活动；考虑到年轻用户的社交习惯，还设计了「漂流盒」树洞社群功能，让用户在等快递、处理包装之外也能获得情感连接。原创 IP「小盒」以 34 个省份 / 自治区 / 直辖市的地域特色为原型设计，让不同规格的包装都能对应一个有辨识度的角色形象。</p>
 
       <div class="img-grid cols-2 reveal">
         <figure class="figure">
           <img src="../assets/img/logistics/ip-family.png" alt="34个省份地域特色IP形象「小盒」家族展示">
-          <figcaption>「小盒」地域 IP 家族（部分）</figcaption>
+          <figcaption data-i18n="logistics.cap2">「小盒」地域 IP 家族（部分）</figcaption>
         </figure>
         <figure class="figure">
           <img src="../assets/img/logistics/ip-turnaround.jpg" alt="IP形象小盒的正面侧面背面三视图">
-          <figcaption>IP 形象三视图设计</figcaption>
+          <figcaption data-i18n="logistics.cap3">IP 形象三视图设计</figcaption>
         </figure>
       </div>
 
       <figure class="figure reveal" style="margin:26px 0;">
         <img src="../assets/img/logistics/app-ui-screens.png" alt="绿盒子小程序界面截图展示">
-        <figcaption>「绿盒子」小程序界面展示</figcaption>
+        <figcaption data-i18n="logistics.cap4">「绿盒子」小程序界面展示</figcaption>
       </figure>
 
-      <h3>线下 IP 实体回收站点</h3>
-      <p>结合网红打卡效应布局线下站点：以江南大学为试运营点，重点覆盖学生拆快递最集中的菜鸟驿站与宿舍园区，站点回收所得的「绿豆」积分与线上账户互通，形成「线下回收 → 线上兑换 → 分享传播」的闭环。</p>
-      <h3>商业模式</h3>
-      <p>项目采用「互联网 + 循环」模式，收入来源包括平台商家佣金（3%）、IP 周边销售与广告收入；计划总投资规模 400 万元，资金来源包括团队现金投资（首期 20 万元）、政府绿色治理相关投资、风险投资与寄递企业战略投资，形成覆盖研发、推广与运营的完整资金结构。</p>
+      <h3 data-i18n="logistics.heading.offline">线下 IP 实体回收站点</h3>
+      <p data-i18n="logistics.solution.p2">结合网红打卡效应布局线下站点：以江南大学为试运营点，重点覆盖学生拆快递最集中的菜鸟驿站与宿舍园区，站点回收所得的「绿豆」积分与线上账户互通，形成「线下回收 → 线上兑换 → 分享传播」的闭环。</p>
+      <h3 data-i18n="logistics.heading.business">商业模式</h3>
+      <p data-i18n="logistics.solution.p3">项目采用「互联网 + 循环」模式，收入来源包括平台商家佣金（3%）、IP 周边销售与广告收入；计划总投资规模 400 万元，资金来源包括团队现金投资（首期 20 万元）、政府绿色治理相关投资、风险投资与寄递企业战略投资，形成覆盖研发、推广与运营的完整资金结构。</p>
 
       <figure class="figure reveal" style="max-width:640px;margin:26px 0;">
         <img src="../assets/img/logistics/business-model.png" alt="互联网加循环商业模式循环图">
-        <figcaption>「互联网 + 循环」商业模式图</figcaption>
+        <figcaption data-i18n="logistics.cap5">「互联网 + 循环」商业模式图</figcaption>
       </figure>
     </div>
   </div>
@@ -112,39 +118,40 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>试点成效</h2>
+    <h2 data-i18n="logistics.heading.pilot">试点成效</h2>
     <div class="pj-body">
       <div class="compare-chart" style="max-width:820px;">
-        <div class="compare-row"><span class="cr-label">回收效率提升</span><div class="cr-bar-track"><div class="cr-bar" style="width:45%"></div></div><span class="cr-val">+25%</span></div>
-        <div class="compare-row"><span class="cr-label">管理成本降低</span><div class="cr-bar-track"><div class="cr-bar" style="width:70%"></div></div><span class="cr-val">-40%</span></div>
-        <div class="compare-row"><span class="cr-label">积分弹窗优化后回收触发率</span><div class="cr-bar-track"><div class="cr-bar" style="width:97%"></div></div><span class="cr-val">+55%</span></div>
+        <div class="compare-row"><span class="cr-label" data-i18n="logistics.metric1">回收效率提升</span><div class="cr-bar-track"><div class="cr-bar" style="width:45%"></div></div><span class="cr-val">+25%</span></div>
+        <div class="compare-row"><span class="cr-label" data-i18n="logistics.metric2">管理成本降低</span><div class="cr-bar-track"><div class="cr-bar" style="width:70%"></div></div><span class="cr-val">-40%</span></div>
+        <div class="compare-row"><span class="cr-label" data-i18n="logistics.metric3">积分弹窗优化后回收触发率</span><div class="cr-bar-track"><div class="cr-bar" style="width:97%"></div></div><span class="cr-val">+55%</span></div>
       </div>
-      <p>团队还通过 A/B 测试验证了积分弹窗提示的界面优化：调整后用户的回收行为触发率提升 55%。项目最终与 2 家物流企业达成合作意向，推动校园试点向区域化扩展，并获评省级重点创新项目认证及校方孵化支持，同时在三创挑战赛中获得校级二等奖。</p>
+      <p data-i18n="logistics.pilot.p1">团队还通过 A/B 测试验证了积分弹窗提示的界面优化：调整后用户的回收行为触发率提升 55%。项目最终与 2 家物流企业达成合作意向，推动校园试点向区域化扩展，并获评省级重点创新项目认证及校方孵化支持，同时在三创挑战赛中获得校级二等奖。</p>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>收获</h2>
+    <h2 data-i18n="common.headingTakeaways">收获</h2>
     <div class="pj-body">
-      <p>这是我第一次完整走完「市场调研 — 产品方案 — 商业计划 — 落地试运营」的全链路：不仅要设计好用的交互，还要用 SPSS 把定量数据变成可以说服投资人和学校的证据，用财务模型证明商业模式能跑得通。这段经历让我在后来的人机交互研究中，一直保留着「不仅要做出来，还要能被验证、被讲清楚」的习惯。</p>
+      <p data-i18n="logistics.takeaway.p1">这是我第一次完整走完「市场调研 — 产品方案 — 商业计划 — 落地试运营」的全链路：不仅要设计好用的交互，还要用 SPSS 把定量数据变成可以说服投资人和学校的证据，用财务模型证明商业模式能跑得通。这段经历让我在后来的人机交互研究中，一直保留着「不仅要做出来，还要能被验证、被讲清楚」的习惯。</p>
     </div>
   </div>
 </section>
 
 <div class="wrap pj-nav">
-  <a href="lumaflex.html">← 上一个案例：LumaFlex</a>
-  <a href="../index.html#projects">返回精选项目 →</a>
+  <a href="lumaflex.html" data-i18n="logistics.navBack">← 上一个案例：LumaFlex</a>
+  <a href="../index.html#projects" data-i18n="logistics.navNext">返回精选项目 →</a>
 </div>
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%;">
-    <span>© 2026 王效禹</span>
+    <span data-i18n="home.footer.copyright">© 2026 王效禹</span>
     <span>Built with care</span>
   </div>
 </footer>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

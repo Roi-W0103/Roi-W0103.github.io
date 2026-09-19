@@ -197,6 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 打字机效果（当前状态一行）
   const tw = document.querySelector('[data-typewriter]');
   if (tw) {
+    tw.dataset.typewriterStarted = 'true'; // 供 i18n.js 判断：语言切换时要不要重新打字
     const full = tw.getAttribute('data-typewriter');
     tw.textContent = '';
     let i = 0;

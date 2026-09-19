@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>可视化情绪调节气动软体交互装置 — 王效禹</title>
-<meta name="description" content="手持式自感应气动软体交互装置：挤压动作实时驱动可视化呼吸引导反馈，构建情绪调节闭环。">
+<title data-i18n="pouch.meta.title">可视化情绪调节气动软体交互装置 — 王效禹</title>
+<meta name="description" data-i18n-attr="content:pouch.meta.description" content="手持式自感应气动软体交互装置：挤压动作实时驱动可视化呼吸引导反馈，构建情绪调节闭环。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
@@ -15,26 +15,32 @@
 
 <nav class="site-nav">
   <div class="wrap">
-    <a href="../index.html#projects" class="nav-back">← 返回主页</a>
-    <span class="nav-name" style="font-size:.85rem;color:var(--ink-faint);">王效禹</span>
+    <a href="../index.html#projects" class="nav-back" data-i18n="common.backToHome">← 返回主页</a>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang-btn="zh" class="is-active">中</button>
+        <button type="button" data-lang-btn="en">EN</button>
+      </div>
+      <span class="nav-name" style="font-size:.85rem;color:var(--ink-faint);" data-i18n="common.name">王效禹</span>
+    </div>
   </div>
 </nav>
 
 <header class="project-hero">
   <div class="wrap">
     <div class="tags">
-      <span>课程研究项目</span>
-      <span>4 人团队</span>
+      <span data-i18n="pouch.tag1">课程研究项目</span>
+      <span data-i18n="pouch.tag2">4 人团队</span>
       <span>2026.02 – 2026.04</span>
-      <span>硬件传感器 &amp; 用户研究负责人</span>
+      <span data-i18n="home.projects.card1.kicker">硬件传感器 &amp; 用户研究负责人</span>
     </div>
-    <h1>可视化情绪调节气动软体交互装置</h1>
-    <p class="subtitle">一款手持式自感应气动软体交互装置：挤压动作实时驱动可视化呼吸引导反馈，构建「生理输入 — 视觉反馈」闭环情绪调节系统。</p>
+    <h1 data-i18n="home.projects.card1.title">可视化情绪调节气动软体交互装置</h1>
+    <p class="subtitle" data-i18n="pouch.subtitle">一款手持式自感应气动软体交互装置：挤压动作实时驱动可视化呼吸引导反馈，构建「生理输入 — 视觉反馈」闭环情绪调节系统。</p>
     <div class="meta-row">
-      <div><span class="meta-label">我的角色</span><span class="meta-value">硬件传感器与用户研究负责人</span></div>
-      <div><span class="meta-label">合作者</span><span class="meta-value">Kehao Wang · Yucheng Liu · Jiajun Wei</span></div>
-      <div><span class="meta-label">周期</span><span class="meta-value">2026.02 – 2026.04</span></div>
-      <div><span class="meta-label">工具</span><span class="meta-value">Arduino · 石墨烯油墨传感层 · TouchDesigner</span></div>
+      <div><span class="meta-label" data-i18n="pouch.metaRoleLabel">我的角色</span><span class="meta-value" data-i18n="home.projects.card1.kicker">硬件传感器与用户研究负责人</span></div>
+      <div><span class="meta-label" data-i18n="common.metaCollaborators">合作者</span><span class="meta-value">Kehao Wang · Yucheng Liu · Jiajun Wei</span></div>
+      <div><span class="meta-label" data-i18n="common.metaTimeline">周期</span><span class="meta-value">2026.02 – 2026.04</span></div>
+      <div><span class="meta-label" data-i18n="common.metaTools">工具</span><span class="meta-value">Arduino · <span data-i18n="pouch.metaToolsVal">石墨烯油墨传感层</span> · TouchDesigner</span></div>
     </div>
   </div>
 </header>
@@ -47,49 +53,49 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>项目背景</h2>
+    <h2 data-i18n="common.headingBackground">项目背景</h2>
     <div class="pj-body">
-      <p>「挤压」是一种被广泛验证的具身情绪调节行为——从捏压力球缓解医疗场景中的疼痛与焦虑，到日常挤捏物品应对工作 / 学习压力，这类动作本身已经是许多人自发的应对策略。我们希望把这种已有的身体习惯，接入一个能实时给出视觉反馈的闭环系统，而不是发明一种全新的、用户需要重新学习的交互动作。</p>
-      <p>项目的核心贡献是一套自感应气动软体挤压装置：通过石墨烯油墨传感层实时读取挤压强度，驱动 TouchDesigner 中的呼吸引导可视化，让「挤压」这个动作与「呼吸节律」这个目标之间建立起可感知、可信任的映射关系。</p>
+      <p data-i18n="pouch.bg.p1">「挤压」是一种被广泛验证的具身情绪调节行为——从捏压力球缓解医疗场景中的疼痛与焦虑，到日常挤捏物品应对工作 / 学习压力，这类动作本身已经是许多人自发的应对策略。我们希望把这种已有的身体习惯，接入一个能实时给出视觉反馈的闭环系统，而不是发明一种全新的、用户需要重新学习的交互动作。</p>
+      <p data-i18n="pouch.bg.p2">项目的核心贡献是一套自感应气动软体挤压装置：通过石墨烯油墨传感层实时读取挤压强度，驱动 TouchDesigner 中的呼吸引导可视化，让「挤压」这个动作与「呼吸节律」这个目标之间建立起可感知、可信任的映射关系。</p>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>需求调研</h2>
+    <h2 data-i18n="pouch.heading.research">需求调研</h2>
     <div class="pj-body">
-      <p>我主导发放了 49 份有效需求调研问卷，参与者以 18–25 岁人群为主。调研发现，多数人已经有用手挤捏、摩擦、揉搓物品来应对压力的习惯，这为「挤压」作为低学习成本的输入方式提供了依据。同时，参与者对现有解压玩具的不满集中在三点：</p>
+      <p data-i18n="pouch.research.p1">我主导发放了 49 份有效需求调研问卷，参与者以 18–25 岁人群为主。调研发现，多数人已经有用手挤捏、摩擦、揉搓物品来应对压力的习惯，这为「挤压」作为低学习成本的输入方式提供了依据。同时，参与者对现有解压玩具的不满集中在三点：</p>
       <div class="stat-row">
-        <div class="stat-box"><span class="num">19</span><span class="label">吐槽「功能单一」</span></div>
-        <div class="stat-box"><span class="num">18</span><span class="label">吐槽「手感 / 贴合度差」</span></div>
-        <div class="stat-box"><span class="num">14</span><span class="label">吐槽「缺乏实时反馈」</span></div>
+        <div class="stat-box"><span class="num">19</span><span class="label" data-i18n="pouch.stat1">吐槽「功能单一」</span></div>
+        <div class="stat-box"><span class="num">18</span><span class="label" data-i18n="pouch.stat2">吐槽「手感 / 贴合度差」</span></div>
+        <div class="stat-box"><span class="num">14</span><span class="label" data-i18n="pouch.stat3">吐槽「缺乏实时反馈」</span></div>
       </div>
-      <p>在反馈偏好上，26/49 的参与者希望挤压时能获得反馈；若有反馈，触觉（37/46）比视觉（23/46）更受青睐，但受限于制作工艺难以做出丰富的触觉输出，因此我们选择优先做视觉反馈，同时保留触觉的可能性。视觉偏好非常明确：慢速变化、连续过渡、圆形 / 曲线、柔和边缘、呼吸节律感——这些直接决定了后续可视化的设计语言。</p>
+      <p data-i18n="pouch.research.p2">在反馈偏好上，26/49 的参与者希望挤压时能获得反馈；若有反馈，触觉（37/46）比视觉（23/46）更受青睐，但受限于制作工艺难以做出丰富的触觉输出，因此我们选择优先做视觉反馈，同时保留触觉的可能性。视觉偏好非常明确：慢速变化、连续过渡、圆形 / 曲线、柔和边缘、呼吸节律感——这些直接决定了后续可视化的设计语言。</p>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>系统实现</h2>
+    <h2 data-i18n="pouch.heading.system">系统实现</h2>
     <div class="pj-body">
-      <h3>软体囊体制作</h3>
-      <p>选用 PE 薄膜作为主材料以保证密封性与耐用度。最初用熨斗 + 烘焙纸做边缘热封，但熨斗宽而不精细，容易漏气；后改用电烙铁手动热封，精细控制封边轨迹，才做出真正气密的囊体。</p>
-      <h3>Arduino 信号采集</h3>
-      <p>我负责搭建电压分压电路：石墨烯油墨层在挤压时电阻变化，与一枚固定电阻串联分压后，由 Arduino 模拟输入口读取电压波动，反映挤压强度的实时变化，压缩时读数下降、拉伸时读数上升，松开后可观察到轻微的滞后（hysteresis）现象。</p>
-      <h3>TouchDesigner 双层可视化逻辑</h3>
-      <p>外层圆环由 LFO CHOP 产生正弦波形，代表一个用户无法控制、但可以跟随的「标准呼吸节律」参考；内层圆环直接映射 Arduino 传来的挤压强度，作为用户输入的实时反馈；再叠加一层由 Noise TOP 生成、随挤压强度变化亮度与密度的动态背景，构成一种更「氛围化」而非精确对齐的第三层反馈。</p>
+      <h3 data-i18n="pouch.heading.pouch">软体囊体制作</h3>
+      <p data-i18n="pouch.system.p1">选用 PE 薄膜作为主材料以保证密封性与耐用度。最初用熨斗 + 烘焙纸做边缘热封，但熨斗宽而不精细，容易漏气；后改用电烙铁手动热封，精细控制封边轨迹，才做出真正气密的囊体。</p>
+      <h3 data-i18n="pouch.heading.arduino">Arduino 信号采集</h3>
+      <p data-i18n="pouch.system.p2">我负责搭建电压分压电路：石墨烯油墨层在挤压时电阻变化，与一枚固定电阻串联分压后，由 Arduino 模拟输入口读取电压波动，反映挤压强度的实时变化，压缩时读数下降、拉伸时读数上升，松开后可观察到轻微的滞后（hysteresis）现象。</p>
+      <h3 data-i18n="pouch.heading.td">TouchDesigner 双层可视化逻辑</h3>
+      <p data-i18n="pouch.system.p3">外层圆环由 LFO CHOP 产生正弦波形，代表一个用户无法控制、但可以跟随的「标准呼吸节律」参考；内层圆环直接映射 Arduino 传来的挤压强度，作为用户输入的实时反馈；再叠加一层由 Noise TOP 生成、随挤压强度变化亮度与密度的动态背景，构成一种更「氛围化」而非精确对齐的第三层反馈。</p>
     </div>
 
     <div class="img-grid cols-2 reveal">
       <figure class="figure">
         <img src="../assets/img/pouch/circuit-diagram.png" alt="压力传感电压分压电路原理图">
-        <figcaption>Arduino 电压分压电路原理图</figcaption>
+        <figcaption data-i18n="pouch.cap1">Arduino 电压分压电路原理图</figcaption>
       </figure>
       <figure class="figure">
         <img src="../assets/img/pouch/touchdesigner-network.png" alt="TouchDesigner 节点网络截图，展示信号处理与可视化渲染管线">
-        <figcaption>TouchDesigner 信号处理与渲染节点网络</figcaption>
+        <figcaption data-i18n="pouch.cap2">TouchDesigner 信号处理与渲染节点网络</figcaption>
       </figure>
     </div>
   </div>
@@ -97,74 +103,75 @@
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>用户评估</h2>
+    <h2 data-i18n="pouch.heading.eval">用户评估</h2>
     <div class="pj-body">
-      <p>10 名 23–26 岁参与者完成了「基线焦虑评分 → 使用装置 → 使用后评分与访谈」的评估流程：</p>
+      <p data-i18n="pouch.eval.p1">10 名 23–26 岁参与者完成了「基线焦虑评分 → 使用装置 → 使用后评分与访谈」的评估流程：</p>
       <div class="stat-row">
-        <div class="stat-box"><span class="num">7.4 → 5.1</span><span class="label">焦虑评分均值（10 分制）</span></div>
-        <div class="stat-box"><span class="num">31.1%</span><span class="label">焦虑评分平均降幅（p &lt; 0.05）</span></div>
-        <div class="stat-box"><span class="num">9 / 10</span><span class="label">参与者焦虑水平下降</span></div>
+        <div class="stat-box"><span class="num">7.4 → 5.1</span><span class="label" data-i18n="pouch.stat4">焦虑评分均值（10 分制）</span></div>
+        <div class="stat-box"><span class="num">31.1%</span><span class="label" data-i18n="pouch.stat5">焦虑评分平均降幅（p &lt; 0.05）</span></div>
+        <div class="stat-box"><span class="num">9 / 10</span><span class="label" data-i18n="pouch.stat6">参与者焦虑水平下降</span></div>
       </div>
 
       <div class="img-grid cols-3 reveal">
         <figure class="figure">
           <img src="../assets/img/pouch/chart-anxiety-before-after.png" alt="使用前后平均焦虑水平柱状图，7.4降至5.1，p小于0.05">
-          <figcaption>使用前后平均焦虑水平</figcaption>
+          <figcaption data-i18n="pouch.cap3">使用前后平均焦虑水平</figcaption>
         </figure>
         <figure class="figure">
           <img src="../assets/img/pouch/chart-radar-ux.png" alt="用户体验雷达图：易用性、舒适度、响应性、呼吸帮助等维度">
-          <figcaption>用户体验评分雷达图</figcaption>
+          <figcaption data-i18n="pouch.cap4">用户体验评分雷达图</figcaption>
         </figure>
         <figure class="figure">
           <img src="../assets/img/pouch/chart-heatmap.png" alt="焦虑降低与各项UX指标的相关性热力图">
-          <figcaption>焦虑降低与 UX 指标相关性热力图</figcaption>
+          <figcaption data-i18n="pouch.cap5">焦虑降低与 UX 指标相关性热力图</figcaption>
         </figure>
       </div>
 
-      <p>热力图分析显示「焦虑降低」与「帮助调节呼吸」之间存在显著正相关（r = 0.49），直接支持了系统的核心逻辑：通过具身互动引导深呼吸，是实现情绪稳定的主要路径。雷达图上「握持舒适度」明显是短板——多位参与者反映囊体偏小、偏硬，长时间挤压不够舒适。</p>
+      <p data-i18n="pouch.eval.p2">热力图分析显示「焦虑降低」与「帮助调节呼吸」之间存在显著正相关（r = 0.49），直接支持了系统的核心逻辑：通过具身互动引导深呼吸，是实现情绪稳定的主要路径。雷达图上「握持舒适度」明显是短板——多位参与者反映囊体偏小、偏硬，长时间挤压不够舒适。</p>
     </div>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>基于反馈的两轮迭代</h2>
+    <h2 data-i18n="pouch.heading.iteration">基于反馈的两轮迭代</h2>
     <div class="pj-body">
       <ul>
-        <li><strong>囊体变大变软</strong>：从只能用手指挤压的小囊体，迭代为可以用整个手掌包裹按压的更大、更软的版本，降低操作的费力感与局促感。</li>
-        <li><strong>可视化从实心圆改为粒子场</strong>：部分参与者反馈实心圆 + 参考圆的组合「太清晰」，反而让人忍不住去对齐、纠正自己的呼吸，变成一种自我监控压力而非放松。改用扩散的粒子场后，仍能传达密度、扩张 / 收缩等关键信息，但不再强加一个「标准答案」，更符合「引导而非评判」的设计目标。</li>
+        <li data-i18n="pouch.iter1"><strong>囊体变大变软</strong>：从只能用手指挤压的小囊体，迭代为可以用整个手掌包裹按压的更大、更软的版本，降低操作的费力感与局促感。</li>
+        <li data-i18n="pouch.iter2"><strong>可视化从实心圆改为粒子场</strong>：部分参与者反馈实心圆 + 参考圆的组合「太清晰」，反而让人忍不住去对齐、纠正自己的呼吸，变成一种自我监控压力而非放松。改用扩散的粒子场后，仍能传达密度、扩张 / 收缩等关键信息，但不再强加一个「标准答案」，更符合「引导而非评判」的设计目标。</li>
       </ul>
-      <div class="quote-block">「问题不是可视化映射不够清晰，恰恰相反，它可能太清晰了。」——项目对迭代动机的反思，也是这次研究最重要的设计洞察之一。</div>
+      <div class="quote-block" data-i18n="pouch.quote">「问题不是可视化映射不够清晰，恰恰相反，它可能太清晰了。」——项目对迭代动机的反思，也是这次研究最重要的设计洞察之一。</div>
     </div>
 
     <figure class="figure reveal" style="max-width:600px;margin:26px auto 0;">
       <img src="../assets/img/pouch/particle-field-iteration.png" alt="迭代后的粒子场呼吸可视化效果">
-      <figcaption>迭代版本：从实心圆改为扩散粒子场</figcaption>
+      <figcaption data-i18n="pouch.cap6">迭代版本：从实心圆改为扩散粒子场</figcaption>
     </figure>
   </div>
 </section>
 
 <section class="pj-section">
   <div class="wrap">
-    <h2>收获</h2>
+    <h2 data-i18n="common.headingTakeaways">收获</h2>
     <div class="pj-body">
-      <p>这个项目让我确认了一件事：一个技术上准确的映射，不等于一个心理上有效的映射。作为硬件与用户研究负责人，我负责把「挤压强度」这个物理量做成稳定可用的信号，但真正决定系统是否有效的，是这个信号被转译成视觉反馈之后，用户会不会因为「太精确」而产生新的压力。这也直接影响了我在毕业设计中对触觉渲染「平滑度」而非「精确度」的取舍。</p>
+      <p data-i18n="pouch.takeaway.p1">这个项目让我确认了一件事：一个技术上准确的映射，不等于一个心理上有效的映射。作为硬件与用户研究负责人，我负责把「挤压强度」这个物理量做成稳定可用的信号，但真正决定系统是否有效的，是这个信号被转译成视觉反馈之后，用户会不会因为「太精确」而产生新的压力。这也直接影响了我在毕业设计中对触觉渲染「平滑度」而非「精确度」的取舍。</p>
     </div>
   </div>
 </section>
 
 <div class="wrap pj-nav">
-  <a href="haptic-companionship.html">← 上一个案例：Haptic Companionship</a>
-  <a href="lumaflex.html">下一个案例：LumaFlex →</a>
+  <a href="haptic-companionship.html" data-i18n="pouch.navBack">← 上一个案例：Haptic Companionship</a>
+  <a href="lumaflex.html" data-i18n="pouch.navNext">下一个案例：LumaFlex →</a>
 </div>
 
 <footer>
   <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%;">
-    <span>© 2026 王效禹</span>
+    <span data-i18n="home.footer.copyright">© 2026 王效禹</span>
     <span>Built with care</span>
   </div>
 </footer>
 
+<script src="../js/i18n.js"></script>
 <script src="../js/main.js"></script>
 </body>
 </html>

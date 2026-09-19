@@ -14,6 +14,7 @@
 │   └── green-logistics.html        # 绿色物流服务平台
 ├── css/style.css                   # 全站样式（配色 / 字体变量都在文件顶部的 :root 里）
 ├── js/main.js                      # 滚动淡入、卡片入场动效、水波纹背景等交互
+├── js/i18n.js                      # 中英文案词典 + 语言切换逻辑
 ├── assets/
 │   ├── resume.pdf                  # 简历，首页和详情页的「下载简历」按钮都链接到这里
 │   └── img/                        # 各项目页用到的图片，按项目分了子文件夹
@@ -52,13 +53,13 @@ python -m http.server 8000
 
 网站部署在 GitHub Pages 上，仓库设置里 Pages 的来源选的是 `main` 分支的根目录（`/root`）。以后改完内容，正常 `git add / commit / push` 到 `main`，几分钟内线上就会自动更新，不需要额外操作。
 
-## 以后想做的事：中英双语
+## 中英双语
 
-现在整站只有中文（一些没有合适中文说法的专有名词保留了英文，比如 Arduino、TouchDesigner、STAI-6）。为了以后加英文版更方便，页面结构上留了一些余地：
+导航栏最右边有个「中 / EN」的切换按钮，点一下全站文案（包括所有项目详情页）都会跟着切换，选择会记在浏览器的 localStorage 里，下次打开或者跳转到别的页面也会记得。专有名词（Arduino、TouchDesigner、STAI-6 之类）中英文都保持原文不翻译。
 
-- 每个板块都有清晰的 `id`（`#about`、`#focus`、`#spotlight`、`#projects`、`#experience`、`#contact`），内容和排版是分开的，换文案不用动样式。
-- 每个页面的顶部导航都是独立的小组件，以后加个语言切换按钮不会影响整体布局。
-- 打算这么实现：加一份 `js/i18n.js`，把中英文案各写成一个 JS 对象（key 保持一致），给需要翻译的元素加上 `data-i18n="key"` 属性，切换语言的时候用 JS 换文案，同时把 `<html lang="...">` 也切换一下。这样可以直接复用现在这套 HTML 结构和 CSS，不用重新排版。
+实现方式很直接：`js/i18n.js` 里维护了一份中英文案词典（`STRINGS.zh` / `STRINGS.en`，key 一一对应），HTML 里需要翻译的元素上加了 `data-i18n="key"`（切换语言时替换该元素的 `innerHTML`）或者 `data-i18n-attr="属性名:key"`（替换指定属性，比如 meta 标签的 `content`）。点击切换按钮或者打开页面时都会跑一遍 `applyLanguage()`，把所有带这两种属性的元素文案换掉、顺便切一下 `<html lang="...">`。
+
+新增文案的时候，只要在对应 `.html` 文件里给元素打上 `data-i18n="命名空间.字段名"`（页面专属内容建议按页面取命名空间，比如 `haptic.xxx`、`lumaflex.xxx`，跨页面复用的内容可以放在 `common.*`），再去 `js/i18n.js` 的 `STRINGS.zh` 和 `STRINGS.en` 里各加一行对应的翻译就行，两边 key 必须完全一致。
 
 ## 编辑笔记
 
