@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LumaFlex · 运动后智能拉伸系统 — 王效禹</title>
+<meta name="description" content="基于双钻模型的设计挑战：无屏可穿戴 + App，自动检测运动结束并引导个性化拉伸恢复。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<canvas id="ink-canvas" aria-hidden="true"></canvas>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="../index.html#projects" class="nav-back">← 返回主页</a>
+    <span class="nav-name" style="font-size:.85rem;color:var(--ink-faint);">王效禹</span>
+  </div>
+</nav>
+
+<header class="project-hero">
+  <div class="wrap">
+    <div class="tags">
+      <span>人机交互课程设计挑战</span>
+      <span>5 人团队</span>
+      <span>2025.10 – 2025.12</span>
+      <span>产品负责人</span>
+    </div>
+    <h1>LumaFlex · 运动后智能拉伸系统</h1>
+    <p class="subtitle">一套传感器驱动的 IoT 闭环方案（无屏可穿戴设备 + 移动端 App），自动感知运动状态、驱动用户建立健康的拉伸恢复习惯。</p>
+    <div class="meta-row">
+      <div><span class="meta-label">我的角色</span><span class="meta-value">产品负责人 · 需求分析与高保真原型</span></div>
+      <div><span class="meta-label">合作者</span><span class="meta-value">Kehao Wang · Yucheng Liu · Jiajun Wei · Amar Purewal</span></div>
+      <div><span class="meta-label">周期</span><span class="meta-value">2025.10 – 2025.12</span></div>
+      <div><span class="meta-label">方法与工具</span><span class="meta-value">Double Diamond · Six Hats · Figma</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <figure class="hero-figure reveal">
+    <img src="../assets/img/lumaflex/hero-wearable.jpg" alt="佩戴智能手环运动的场景，呼应运动后拉伸恢复的主题">
+  </figure>
+</div>
+
+<section class="pj-section">
+  <div class="wrap">
+    <h2>项目背景</h2>
+    <div class="pj-body">
+      <p>这是一次命题式设计挑战：用数字技术解决一个「不良行为」。我们团队选择的问题是——运动后放松与拉伸的习惯普遍缺失。团队成员本身都是运动爱好者，深知不拉伸带来的隐患：跑步 / HIIT 类运动长期不拉伸会增加跟腱炎与「跑步膝」风险；力量训练不拉伸容易导致肌肉失衡、圆肩、腰椎压力增加；球类运动的急停变向对软组织冲击大，长期紧绷同样会积累伤害。同时，英国近年运动人口持续上升（2022–23 年度 63.4% 的成年人达到每周 150 分钟推荐运动量），这让「运动后恢复」成为一个规模在扩大而非缩小的问题。</p>
+    </div>
+  </div>
+</section>
+
+<section class="pj-section">
+  <div class="wrap">
+    <h2>研究方法：双钻模型</h2>
+    <div class="pj-body">
+      <p>我们完整走完了 Double Diamond 的四个阶段：问题发现（头脑风暴 30+ 候选方向）→ 问题定义（87 份问卷 + 5 场半结构化访谈）→ 方案发散（Six Hats 六顶思考帽 + 多轮草图）→ 方案收敛（Figma 高保真原型）。为了控制问卷疲劳，我们设计了带跳转逻辑的分支问卷：一旦受访者自述「总是」拉伸，问卷立即结束，确保收集到的定性数据都来自真正存在这个问题的人群。</p>
+
+      <figure class="figure reveal" style="max-width:600px;margin:26px 0;">
+        <img src="../assets/img/lumaflex/double-diamond.png" alt="Double Diamond 双钻设计流程图，涵盖研究发现到方案收敛四个阶段">
+        <figcaption>项目遵循的 Double Diamond 设计流程</figcaption>
+      </figure>
+
+      <div class="stat-row">
+        <div class="stat-box"><span class="num">87</span><span class="label">有效问卷</span></div>
+        <div class="stat-box"><span class="num">5</span><span class="label">半结构化深度访谈（21–55 岁）</span></div>
+        <div class="stat-box"><span class="num">62% → 16%</span><span class="label">规律运动 vs. 「总是」拉伸的人群占比</span></div>
+      </div>
+
+      <div class="img-grid cols-2 reveal">
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/recruitment-poster.jpg" alt="线下招募海报：你运动后会跳过拉伸吗？">
+          <figcaption>线下问卷招募海报</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/fieldwork-stretching.jpg" alt="健身房实地观察照片，记录用户拉伸行为">
+          <figcaption>健身房田野观察实拍</figcaption>
+        </figure>
+      </div>
+
+      <figure class="figure reveal" style="max-width:520px;margin:26px 0;">
+        <img src="../assets/img/lumaflex/chart-main-reason.png" alt="不拉伸的首要原因条形图：不知道怎么拉伸23票，经常忘记19票，太累了11票">
+        <figcaption>不拉伸的首要原因（强制单选，票数）</figcaption>
+      </figure>
+      <p>一个关键的反直觉发现：多选题里「疲劳」得票最高，但被要求「只选一个最主要的原因」时，「不知道怎么正确拉伸」反而跃居第一。这说明真正的瓶颈不是体力，而是<strong>缺乏清晰的引导</strong>——这直接决定了我们后续把「指导」而非「提醒」作为方案的核心。</p>
+    </div>
+  </div>
+</section>
+
+<section class="pj-section">
+  <div class="wrap">
+    <h2>用户画像与关键洞察</h2>
+    <div class="pj-body">
+      <p>我们构建了 6 个用户画像（如忙碌白领 Lucas、健身新手 Sarah 等），跨越 24–64 岁年龄段，归纳出一个共同的失效窗口：<strong>「高强度运动」与「休息」之间的 1–2 分钟</strong>。这段时间用户的意志力最低——一旦要解锁手机、搜视频、读通知，心流就会被打断，拉伸计划随之被放弃。</p>
+      <p>我们把画像归纳为三类核心痛点人群，并对应出三条设计需求：</p>
+      <ul>
+        <li><strong>「容易分心型」</strong>（如 Lucas）：一旦拿起手机查看消息，运动状态就已经结束了 → 需要不依赖手机屏幕的非侵入式触发。</li>
+        <li><strong>「缺乏安全感型」</strong>（如 Sarah、Arthur）：跟着小屏幕视频做动作容易姿势不对、引发焦虑 → 需要免看屏幕的节奏化语音引导。</li>
+        <li><strong>「结果导向怀疑型」</strong>（如 Marcus、Elena）：静态拉伸「看不见、摸不着」效果，容易被当作浪费时间 → 需要即时的生理反馈验证效果。</li>
+      </ul>
+
+      <div class="persona-row reveal">
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/persona-01.png" alt="用户画像：26岁UX设计师，容易分心型">
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/persona-02.png" alt="用户画像：21岁计算机专业学生，缺乏安全感型">
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/persona-03.png" alt="用户画像：64岁退休教授，行动不便与关节担忧">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pj-section">
+  <div class="wrap">
+    <h2>解决方案设计</h2>
+    <div class="pj-body">
+      <p>最终方案是一枚<strong>无屏</strong>手环 + 配套 App。选择无屏是刻意的取舍：持续高频采样与本地推理需要低功耗与稳定贴肤，屏幕既耗电又增加成本，也会在该放松的时刻继续制造「看屏幕」的分心。系统分三步运作：</p>
+      <h3>1 · 监测 — 多传感器融合判断运动是否结束</h3>
+      <p>融合心率（HR）、血氧（SpO₂）与惯性传感器（IMU）三路信号：运动结束的「指纹」是「肢体动作骤降 → 心率开始回落 → 血氧趋于稳定」同时出现。我们定义了一个简单的置信度公式：</p>
+      <p style="font-family:var(--serif);font-size:1.1rem;background:var(--bg-alt);padding:14px 18px;border-radius:var(--radius-s);display:inline-block;">confidence = 0.4 × 动作证据 + 0.4 × 心率证据 + 0.2 × 血氧证据</p>
+      <p>当置信度 ≥ 0.7 且在 20–60 秒的确认窗口内保持稳定，系统才判定运动真正结束，避免把短暂休息误判为收工。</p>
+      <h3>2 · 提醒 — 多模态、可控的通知</h3>
+      <p>手环震动 + 灯带流光提示，同步推送手机端通知；用户可以单击贪睡、双击取消、长按开关机，并且手环具备本地兜底能力——即使手机离线也能独立触发提醒，避免「重要但会被忽略」的经典可用性陷阱。</p>
+      <h3>3 · 引导 — 数字孪生的「红转绿」视觉激励</h3>
+      <p>App 用一个数字孪生模型镜像用户的疲劳状态：目标肌群先以脉动的红色表示乳酸堆积与紧绷，随着拉伸推进逐渐褪成黄色、最终变绿。这借助了 Proteus 效应——当人在一个可视化的身体上看到「待修复」的状态，会自发产生「去修复它」的心理驱动力，把被动等待变成主动的「修复」行为。</p>
+
+      <figure class="figure reveal" style="max-width:400px;margin:26px 0;">
+        <img src="../assets/img/lumaflex/system-architecture.png" alt="三层系统架构图：输入层智能手表与IMU、逻辑层疲劳估计与部位映射、呈现层数字孪生与颜色插值">
+        <figcaption>三层系统架构：输入层 · 逻辑层 · 呈现层</figcaption>
+      </figure>
+
+      <h3>从草图到最终形态</h3>
+      <p>无屏手环的造型经过多轮手绘草图与工业设计细化，最终收敛为一枚左右对称、贴合手腕曲线的环形佩戴设备。</p>
+      <div class="img-grid cols-2 reveal">
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/sketch-early.jpg" alt="手绘草图：环形手环的充电口、腕带支撑与传感器位置构思">
+          <figcaption>早期手绘构思草图</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/render-final.png" alt="最终环形手环的照片级3D渲染图">
+          <figcaption>最终 3D 产品渲染</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pj-section">
+  <div class="wrap">
+    <h2>高保真原型</h2>
+    <div class="pj-body">
+      <p>我用 Figma 独立完成了全链路高保真原型，覆盖：个性化引导的 Onboarding（身高体重与拉伸偏好）→ 运动后智能通知（自动匹配拉伸时长与目标肌群）→ 分步引导（计时器 + 部位高亮 + 语音口令）→ 完成总结与体态趋势追踪 → 勋章成就的游戏化激励。通过 5 组典型用户场景验证，覆盖了从办公室久坐后恢复到高强度运动后拉伸引导的完整路径。</p>
+
+      <div class="phone-row reveal">
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/hifi-onboarding.png" alt="Onboarding 引导页面截图，输入体重信息">
+          <figcaption>Onboarding 个性化引导</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="../assets/img/lumaflex/hifi-session.png" alt="拉伸引导会话截图：身体部位高亮与倒计时">
+          <figcaption>分步拉伸引导：部位高亮 + 计时</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pj-section">
+  <div class="wrap">
+    <h2>反思与未来方向</h2>
+    <div class="pj-body">
+      <ul>
+        <li>引入设备端机器学习，让检测阈值能针对个人运动风格与心率模式自适应，而非依赖固定规则。</li>
+        <li>基于长期体态与酸痛趋势数据，生成动态的个性化拉伸计划，而不只是单次触发。</li>
+        <li>探索姿态或肌张力传感器，为长期恢复情况提供更深入的洞察。</li>
+        <li>为社交动机型用户增加可选的社群 / 打卡激励功能。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="wrap pj-nav">
+  <a href="emotion-regulation.html">← 上一个案例：情绪调节气动软体装置</a>
+  <a href="green-logistics.html">下一个案例：绿色物流服务平台 →</a>
+</div>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;width:100%;">
+    <span>© 2026 王效禹</span>
+    <span>Built with care</span>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
