@@ -596,13 +596,14 @@ footer {
 .pj-section { padding: 56px 0; border-bottom: 1px solid var(--card-line); }
 .pj-section:last-of-type { border-bottom: none; }
 .pj-section h2 {
-  font-size: 0.8rem;
+  font-size: 1.05rem;
+  text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--gold);
   font-family: var(--sans);
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 .pj-section h3 { font-size: 1.3rem; margin: 28px 0 12px; }
 .pj-body { max-width: 760px; margin: 0 auto; }
@@ -628,6 +629,15 @@ footer {
   border-radius: var(--radius);
   padding: 22px 20px;
   background: var(--bg-alt);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.stat-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 32px rgba(60, 48, 24, 0.16);
+}
+@media (prefers-reduced-motion: reduce) {
+  .stat-box { transition: none; }
+  .stat-box:hover { transform: none; }
 }
 .stat-box .num { font-family: var(--serif); font-size: 2rem; color: var(--sage-deep); display: block; }
 .stat-box .label { font-size: 0.82rem; color: var(--ink-faint); margin-top: 4px; }
@@ -685,6 +695,15 @@ footer {
   border: 1px solid var(--card-line);
   border-radius: var(--radius);
   overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.figure:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 32px rgba(60, 48, 24, 0.16);
+}
+@media (prefers-reduced-motion: reduce) {
+  .figure { transition: none; }
+  .figure:hover { transform: none; }
 }
 .figure img {
   width: 100%;
@@ -713,6 +732,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
   gap: 16px;
   margin: 30px 0;
 }
@@ -747,6 +767,7 @@ footer {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 30px 0;
 }
 .phone-row .figure { width: 200px; flex: 0 0 auto; }
@@ -756,13 +777,13 @@ footer {
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 30px 0;
 }
 .persona-row .figure { width: 220px; flex: 0 0 auto; }
 .persona-row .figure img { aspect-ratio: auto; object-fit: contain; background: #fff; }
 
 @media (max-width: 480px) {
-  .img-grid { justify-content: center; }
   .img-grid .figure img,
   .img-grid-flow .figure img { height: 190px; }
 }
