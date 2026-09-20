@@ -379,10 +379,35 @@ footer, .pj-nav { position: relative; z-index: 1; }
 .hub-item h3 { font-size: 1.08rem; margin-bottom: 6px; }
 .hub-item p { font-size: 0.92rem; margin: 0; }
 .hub-diagram { display: flex; align-items: center; justify-content: center; }
-.hub-diagram svg { width: 100%; height: auto; max-width: 440px; }
+.hub-diagram svg { width: 100%; height: auto; max-width: 440px; overflow: visible; }
 @media (max-width: 820px) {
   .hub-wrap { grid-template-columns: 1fr; }
   .hub-diagram { order: -1; margin-bottom: 8px; }
+}
+
+/* 卫星环绕动效：外层 .orbit-spoke（连线 + 圆点）绕圆心公转，
+   内层 .orbit-counter 以相同角速度反向自转抵消公转角度，
+   让文字始终跟着轨道移动、但保持水平可读。 */
+.orbit-ring { opacity: 0.55; }
+.orbit-spoke {
+  transform-box: view-box;
+  transform-origin: 220px 220px;
+  animation: orbit-rotate 48s linear infinite;
+}
+.orbit-counter {
+  transform-box: view-box;
+  animation: orbit-counter-rotate 48s linear infinite;
+}
+@keyframes orbit-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes orbit-counter-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .orbit-spoke, .orbit-counter { animation: none; }
 }
 
 /* ---------- 代表性研究 · 深色聚光卡片 ---------- */
