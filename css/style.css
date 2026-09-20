@@ -385,10 +385,9 @@ footer, .pj-nav { position: relative; z-index: 1; }
   .hub-diagram { order: -1; margin-bottom: 8px; }
 }
 
-/* 卫星环绕动效：外层 .orbit-spoke（连线 + 圆点）绕圆心公转，
+/* 卫星环绕动效：外层 .orbit-spoke 绕圆心公转，
    内层 .orbit-counter 以相同角速度反向自转抵消公转角度，
-   让文字始终跟着轨道移动、但保持水平可读。 */
-.orbit-ring { opacity: 0.55; }
+   让文字始终沿圆周移动、但保持水平可读。 */
 .orbit-spoke {
   transform-box: view-box;
   transform-origin: 220px 220px;
