@@ -285,7 +285,7 @@ section {
 section.alt { background: rgba(242, 237, 225, 0.97); }
 section > .wrap { padding: 0; max-width: none; }
 .hero, .project-hero { background: transparent; position: relative; z-index: 1; }
-footer, .hero-figure, .pj-nav { position: relative; z-index: 1; }
+footer, .pj-nav { position: relative; z-index: 1; }
 
 @media (max-width: 700px) {
   section { padding: 32px 24px; border-radius: var(--radius); margin-bottom: 22px; }
@@ -717,14 +717,6 @@ footer {
   padding: 10px 14px;
   border-top: 1px solid var(--card-line);
 }
-
-.hero-figure {
-  margin: 0 0 8px;
-  border-radius: var(--radius-l);
-  overflow: hidden;
-  border: 1px solid var(--card-line);
-}
-.hero-figure img { width: 100%; display: block; }
 
 /* 齐高、不裁剪的"看齐画廊"布局：每张图按统一高度等比缩放，宽度顺其自然，
    宽图就宽、窄图就窄，超出一行自动换行——不强行按几列切图，也不会裁掉内容。 */
