@@ -605,7 +605,7 @@ footer {
   margin-bottom: 22px;
 }
 .pj-section h3 { font-size: 1.3rem; margin: 28px 0 12px; }
-.pj-body { max-width: 760px; }
+.pj-body { max-width: 760px; margin: 0 auto; }
 .pj-body p { font-size: 1rem; }
 .pj-body ul { margin: 16px 0; }
 .pj-body li {
@@ -707,16 +707,30 @@ footer {
 }
 .hero-figure img { width: 100%; display: block; }
 
+/* 齐高、不裁剪的"看齐画廊"布局：每张图按统一高度等比缩放，宽度顺其自然，
+   宽图就宽、窄图就窄，超出一行自动换行——不强行按几列切图，也不会裁掉内容。 */
 .img-grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 16px;
   margin: 30px 0;
 }
-.img-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
-.img-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
-.img-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
-.img-grid .figure img { aspect-ratio: 4 / 3; }
-.img-grid.cols-4 .figure img { aspect-ratio: 3 / 4; }
+.img-grid .figure {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+.img-grid .figure img {
+  width: auto;
+  height: 220px;
+  max-width: 100%;
+  object-fit: contain;
+  background: var(--bg-alt);
+}
+.img-grid .figure figcaption { text-align: center; max-width: 280px; }
 
 .img-grid-flow {
   display: flex;
@@ -726,8 +740,8 @@ footer {
   padding-bottom: 6px;
   scrollbar-width: thin;
 }
-.img-grid-flow .figure { flex: 0 0 auto; width: 220px; }
-.img-grid-flow .figure img { height: 220px; aspect-ratio: auto; object-fit: cover; }
+.img-grid-flow .figure { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; }
+.img-grid-flow .figure img { height: 220px; width: auto; max-width: 320px; object-fit: contain; background: var(--bg-alt); }
 
 .phone-row {
   display: flex;
@@ -747,9 +761,8 @@ footer {
 .persona-row .figure { width: 220px; flex: 0 0 auto; }
 .persona-row .figure img { aspect-ratio: auto; object-fit: contain; background: #fff; }
 
-@media (max-width: 760px) {
-  .img-grid.cols-2, .img-grid.cols-3, .img-grid.cols-4 { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 480px) {
-  .img-grid.cols-2, .img-grid.cols-3, .img-grid.cols-4 { grid-template-columns: 1fr; }
+  .img-grid { justify-content: center; }
+  .img-grid .figure img,
+  .img-grid-flow .figure img { height: 190px; }
 }
